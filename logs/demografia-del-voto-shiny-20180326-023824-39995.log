@@ -1,0 +1,6 @@
+Warning message:
+In file.symlink(from, to) :
+  cannot symlink '/usr/lib/R/library/base' to '/srv/shiny-server/demografia-del-voto/packrat/lib-R/base', reason 'File exists'
+Error in loadNamespace(name) : there is no package called ‘shiny’
+Calls: local ... tryCatch -> tryCatchList -> tryCatchOne -> <Anonymous>
+Execution halted
