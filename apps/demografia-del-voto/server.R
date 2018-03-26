@@ -12,9 +12,7 @@ call_compile <- function(e, t, ...){
 
 # Define server logic required to draw a histogram
 server <- function(input, output) {
-  
   output$candidate_rank <- renderTable({
     call_compile(d$demographics, d$totals, region = input$i_region, zona = input$i_zona)
   })
 }
-
