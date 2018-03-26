@@ -2,3 +2,8 @@
 \.DS_Store
 
 apps/demografia-del-voto/\.Rproj\.user/
+.Rproj.user
+
+apps/demografia-del-voto/\.drake/
+
+apps/demografia-del-voto/data/demographics_df\.rds
