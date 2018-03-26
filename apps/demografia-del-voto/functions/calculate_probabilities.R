@@ -22,10 +22,7 @@ compile <- function(x){
   y <- x %>%
     select_if(is.numeric) %>%
     mutate(tot = Reduce(`*`, .)) %>%
-    mutate(tot = tot / sum(tot), 
-           rank = min_rank(tot), 
-           rank = max(rank) - rank + 1) %>%
-    arrange(desc(tot))
+    mutate(tot = tot / sum(tot))
   bind_cols(select_if(x, is.character), y)
 }
 
