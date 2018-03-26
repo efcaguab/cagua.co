@@ -42,7 +42,7 @@ htmlTemplate(
                                "De 18 a 24 años" = "18.24",
                                "De 25 a 34 años" = "25.34",
                                "De 35 a 44 años" = "35.44",
-                               "De 45 a 54 años" = "42.54",
+                               "De 45 a 54 años" = "45.54",
                                "Más de 55 años" = "55"), 
                 width = width_select_inputs),
   input_partido = 
