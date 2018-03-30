@@ -4,7 +4,7 @@ body, html {
 }
 
 .bgimg {
-    background-image: url('index_media/ocean.jpg');
+    background-image: url('media/ocean.jpg');
     height: 100%;
     background-position: center;
     background-size: cover;
