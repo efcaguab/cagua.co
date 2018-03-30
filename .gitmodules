@@ -1,0 +1,3 @@
+[submodule "apps/data-rich"]
+	path = apps/data-rich
+	url = git@github.com:efcaguab/data-rich-insight-poor.git
