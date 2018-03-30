@@ -1,3 +1,6 @@
 [submodule "apps/data-rich"]
 	path = apps/data-rich
 	url = git@github.com:efcaguab/data-rich-insight-poor.git
+[submodule "apps/data-rich-live-demo"]
+	path = apps/data-rich-live-demo
+	url = git@github.com:efcaguab/data-rich-live-demo.git
