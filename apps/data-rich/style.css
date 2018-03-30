@@ -1,0 +1,25 @@
+html {
+	overflow-y: scroll;
+}
+
+.collapsing {
+    transition: height 1.5s;
+}
+
+code {
+    font-family: monospace;
+	background-color: #d9d9d9;
+    display: inline-block; 
+	color: #252525;
+}
+
+.row {
+  margin: 15px 0px;
+}
+
+#codebox {
+	border: 0.5px dotted black; /*Add 1px solid border, use any color you want*/
+	background-color: #d9d9d9; /*Add a background color to the box*/
+	margin-left: 0%;
+	margin-right: 5%;
+}
