@@ -1,0 +1,3 @@
+[submodule "public_html/data-rich-insight-poor"]
+	path = public_html/data-rich-insight-poor
+	url = git@github.com:efcaguab/data-rich-insight-poor.git
