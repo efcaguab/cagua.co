@@ -2,8 +2,9 @@
 
 To run the website:
 
-1. Install nginx
-2. Run `bash place-nginx-conf.sh` to copy nginx configuration
+1. Install nginx `sudo apt-get install nginx`
+2. Open firewall for ports 80 `sudo ufw allow 'Nginx HTTP'`
+2. Run `bash configure-nginx.sh` to copy nginx configuration and make symbolic link to public html
 
 ## Considerations
 
