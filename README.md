@@ -30,6 +30,8 @@ sudo systemctl restart nginx
 
 For simple configuration changes `sudo systemctl reload nginx` would be enough.
 
+If anything goes wrong and the process needs to be killed `sudo fuser -k 80/tcp` will do the trick.
+
 Request logs are stored in `/var/log/nginx/access.log`. Error logs live in `/var/log/nginx/error.log`
 
 ## Works with
