@@ -12,8 +12,25 @@ To run the website:
 
 ## Considerations
 
-* Public html should live in `~/github/cagua-website/cagua_com/public_html`
+* Public html to be copied should live in `~/github/cagua-website/cagua_com/public_html`
 * Shiny server should be running on the port 3838
+* Content lives in default location `/var/www/html`
+
+## Managing the server
+
+Status can be checked with `systemctl status nginx`
+
+To stop, start and restart
+
+```
+sudo systemctl stop nginx
+sudo systemctl start nginx
+sudo systemctl restart nginx
+```
+
+For simple configuration changes `sudo systemctl reload nginx` would be enough.
+
+Request logs are stored in `/var/log/nginx/access.log`. Error logs live in `/var/log/nginx/error.log`
 
 ## Works with
 
