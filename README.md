@@ -37,3 +37,13 @@ Request logs are stored in `/var/log/nginx/access.log`. Error logs live in `/var
 ## Works with
 
 * nginx 1.10.3 (Ubuntu)
+
+## Uninstalling
+
+### MacOS
+
+```
+brew uninstall nginx
+sudo rm -f -R /usr/local/var/run/nginx/
+rm -f -R /usr/local/etc/nginx  
+```
