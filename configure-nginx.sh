@@ -22,5 +22,7 @@ fi
 if [ $SO == 'Linux' ] ; then
   cp ./cagua-co.conf /etc/nginx/sites-available/cagua-co
   ln -s /etc/nginx/sites-available/cagua-co /etc/nginx/sites-enabled/cagua-co
+  cp ./iccb-datarich.conf /etc/nginx/sites-available/iccb-datarich-com
+  ln -s /etc/nginx/sites-available/iccb-datarich-com /etc/nginx/sites-enabled/iccb-datarich-com
   rm /etc/nginx/sites-enabled/default
 fi
