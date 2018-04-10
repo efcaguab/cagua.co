@@ -47,7 +47,7 @@ html {
     height: auto;
     /* padding-top: 8rem;
     padding-bottom: 8rem; */
-    background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("media/sikly-shark-fin.jpg");
+    background: url("media/silky-shark-fin-01.png");
     background-position: center center;
     background-repeat: no-repeat;
     -webkit-background-size: cover;
@@ -56,6 +56,29 @@ html {
     -o-background-size: cover;
     color:#DBF0F0;
 }
+
+.masthead-clear{
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url('media/silky-shark-fin-01.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+#fin {
+    padding-bottom: 8rem; 
+    position: absolute;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("media/silky-shark-fin-only-01.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100%;
+    width: 100%;
+
+}
+
 
 canvas {
     display: block;
