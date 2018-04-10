@@ -30,7 +30,71 @@ hr {
 h1{
   font-size: 75px;
   font-family: 'Roboto Mono', monospace;
-} *//* Sidebar */
+} */
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+.masthead {
+    min-height: 20rem;
+    position: relative;
+    display: table;
+    width: 100%;
+    height: 100vh;
+    /* height: auto; */
+    /* padding-top: 8rem;
+    padding-bottom: 8rem; */
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("media/sikly-shark-fin.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    color:#DBF0F0;
+}
+
+canvas {
+    display: block;
+    vertical-align: bottom;
+}
+
+/* ---- particles.js container ---- */
+
+#particles-js {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    
+    /* background-color: #b61924;
+    background-image: url("http://lorempixel.com/500/500");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%; */
+}
+
+.masthead h1 {
+    font-size: 4rem;
+    margin: 0;
+    padding: 0;
+}
+
+@media (min-width: 400px) {
+    .masthead {
+        height: 100vh;
+    }
+    .masthead h1 {
+        font-size: 5.5rem;
+    }
+}
+
+#title {
+    position: absolute;
+}
+
 /* Sidebar */
 
 #sidebar-wrapper {
