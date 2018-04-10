@@ -163,6 +163,11 @@ var particles_config = {
   "retina_detect": true
 }
 
-particlesJS.load('particles-js', particles_config, function() {
-  console.log('callback - particles.js config loaded');
-})
+if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+  
+} else {
+  document.getElementById("title").style.position = "absolute"
+  particlesJS.load('particles-js', particles_config, function() {
+    console.log('callback - particles.js config loaded');
+  })
+}
