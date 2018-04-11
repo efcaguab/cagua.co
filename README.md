@@ -47,3 +47,9 @@ brew uninstall nginx
 sudo rm -f -R /usr/local/var/run/nginx/
 rm -f -R /usr/local/etc/nginx  
 ```
+
+# Credits
+
+Theme inspired on https://github.com/BlackrockDigital/startbootstrap-stylish-portfolio
+Particles by https://vincentgarreau.com/particles.js/
+Icons https://icomoon.io/app/#/select/font
