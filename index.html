@@ -18,30 +18,11 @@
 <body>
     <!-- Navigation bar starts -->
     <a class="menu-toggle rounded" href="#">
-        <i class="icon-bars"></i>
+        <i class="icon-bars" style="line-height: inherit;"></i>
     </a>
-    <nav id="sidebar-wrapper">
-        <ul class="sidebar-nav mx-2">
-            <li class="sidebar-nav-item">
-                <a class="js-scroll-trigger" href="#page-top">Home</a>
-            </li>
-            <li class="sidebar-nav-item">
-                <a class="js-scroll-trigger" href="#projects">Projects</a>
-            </li>
-            <li class="sidebar-nav-item">
-                <a class="js-scroll-trigger" href="#papers">Publications</a>
-            </li>
-            <li class="sidebar-nav-item">
-                <a class="js-scroll-trigger" href="#cv">Resume</a>
-            </li>
-            <li class="sidebar-nav-item">
-                <a class="js-scroll-trigger" href="#contact">Contact</a>
-            </li>
-            <li class="sidebar-nav-item">
-                <a class="js-scroll-trigger" href="#elsewhere">Elsewhere</a>
-            </li>
-        </ul>
-    </nav>
+    <nav id="sidebar-wrapper"></nav>
+    <script>  document.getElementById("sidebar-wrapper").appendChild(sidebarList(sidebarInfo, "main"))
+        </script>
     <!-- Navigation bar ends -->
 
     <!-- Header starts -->
