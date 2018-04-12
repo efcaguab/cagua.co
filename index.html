@@ -1,18 +1,21 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
 
 <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Add bootstrap style -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-        crossorigin="anonymous">
-    <!-- Add font awesome -->
-    <!-- <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script> -->
-    <script src="assets/jquery-3.3.1.min.js"></script>
-    <script src="assets/particles.min.js"></script>
-    <link rel="stylesheet" href="index.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!-- Add bootstrap style -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+<!-- Add font awesome -->
+<!-- <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script> -->
+<script src="assets/jquery-3.3.1.min.js"></script>
+<script src="assets/particles.min.js"></script>
+<script src="assets/publications.js"></script>
+<script src="assets/sidebar.js"></script>
+
+<link rel="stylesheet" href="index.css">
 </head>
 
 <body>
@@ -43,18 +46,23 @@
 
 
     <main>
-
         <!-- Paper section starts -->
         <div class="container-fluid" id="papers">
             <div class="container">
                 <div class="d-flex flex-row justify-content-center pt-5">
-                    <div class="section-title py-3">
-                        <h2>Latest Publications</h2>
+                    <div class="section-title py-3 text-center">
+                        <h2>Latest Publications
+                            <br/><a href="publications.html">(See All)</a></h2>
                     </div>
                 </div>
                 <div class="row pb-5" id="latest-publications-row"></div>
             </div>
         </div>
+        <script>
+            for (var i = 0; i < 4; i++) {
+                document.getElementById("latest-publications-row").appendChild(createPaper(papers.papers[i]))
+            }
+        </script>
         <!-- Papers section ends -->
 
         <!-- Resume section starts -->
@@ -105,18 +113,18 @@
 
         <!-- Contact section starts -->
         <div class="container-fluid" id="contact">
-                <div class="container mb-5">
-                    <div class="d-flex flex-row justify-content-center pt-5">
-                        <div class="section-title py-3">
-                            <h2>Get in Touch</h2>
-                        </div>
-                    </div>
-                    <div class="flex text-center pt-4 pb-5">
-                        <p class="h3">fernando [at] cagua [dot] co</p>
+            <div class="container mb-5">
+                <div class="d-flex flex-row justify-content-center pt-5">
+                    <div class="section-title py-3">
+                        <h2>Get in Touch</h2>
                     </div>
                 </div>
+                <div class="flex text-center pt-4 pb-5">
+                    <p class="h3">fernando [at] cagua [dot] co</p>
+                </div>
             </div>
-            <!-- Contact section ends -->
+        </div>
+        <!-- Contact section ends -->
     </main>
 
 
@@ -127,7 +135,8 @@
         crossorigin="anonymous"></script>
     <script src="assets/jquery-easing.min.js"></script>
     <script src="assets/menu-toggle.js"></script>
-    <script src="assets/publications.js"></script>
+    <script src="assets/tooltips-with-links.js"></script>
+
 </body>
 
 </html>
