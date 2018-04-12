@@ -109,7 +109,7 @@ function createPaper(paper){
   paperIntRow.classList.add("row")
   // Create column for thumbnail
   var thumbnailCol = document.createElement("div")
-  thumbnailCol.classList.add("col-sm-6")
+  thumbnailCol.classList.add("col-sm-5")
   thumbnailCol.classList.add("d-none")
   thumbnailCol.classList.add("d-sm-block")
   thumbnailCol.classList.add("d-md-none")
@@ -120,12 +120,13 @@ function createPaper(paper){
   pdfLink.setAttribute("target", "_blank")
   var thumbnail = document.createElement("img")
   thumbnail.setAttribute("src", "publications/thumbnails/" + paper.localFileName + ".png")
+  thumbnail.setAttribute("alt", paper.title)
   thumbnail.classList.add("img-fluid")
   thumbnail.classList.add("img-thumbnail")
   // Create description column
   var descColumn = document.createElement("div")
   
-  descColumn.classList.add("col-sm-6")
+  descColumn.classList.add("col-sm-7")
   descColumn.classList.add("col-md-12")
   descColumn.classList.add("col-lg-6")
   descColumn.classList.add("description-column")
@@ -168,6 +169,3 @@ function createPaper(paper){
   return thisPaper
 }
 
-for (var i = 0; i < 6; i++){
-  document.getElementById("latest-publications-row").appendChild(createPaper(papers.papers[i]))
-}
