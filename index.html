@@ -10,10 +10,6 @@
     crossorigin="anonymous">
 <!-- Add font awesome -->
 <!-- <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script> -->
-<script src="assets/jquery-3.3.1.min.js"></script>
-<script src="assets/particles.min.js"></script>
-<script src="assets/publications.js"></script>
-<script src="assets/sidebar.js"></script>
 
 <link rel="stylesheet" href="index.css">
 </head>
@@ -58,11 +54,6 @@
                 <div class="row pb-5" id="latest-publications-row"></div>
             </div>
         </div>
-        <script>
-            for (var i = 0; i < 4; i++) {
-                document.getElementById("latest-publications-row").appendChild(createPaper(papers.papers[i]))
-            }
-        </script>
         <!-- Papers section ends -->
 
         <!-- Resume section starts -->
@@ -213,11 +204,29 @@
     <!-- Popper.js, then Bootstrap JS then jquery extras and then template js-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
+    <script src="js/vendors/jquery-3.3.1.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
-    <script src="assets/jquery-easing.min.js"></script>
-    <script src="assets/menu-toggle.js"></script>
-    <script src="assets/tooltips-with-links.js"></script>
+        <script src="js/vendors/jquery-easing.min.js"></script>
+
+    <script src="js/vendors/particles.min.js"></script>
+    <script src="js/menu-toggle.js"></script>
+    <script src="js/tooltips-with-links.js"></script>
+    <script src="js/publications.js"></script>
+    <script src="js/sidebar.js"></script>
+    <!-- Fill the container with stars -->
+    <script src="js/setup-particle-container.js"></script>
+    <script>
+        // Setup height of header as soon as the div has been created
+        var height = $(window).height();
+        document.getElementById("header-box").style.height = height + "px"
+        // Fill navigation bar
+        document.getElementById("sidebar-wrapper").appendChild(sidebarList(sidebarInfo, "main"))
+        // Fill in papers
+        for (var i = 0; i < 4; i++) {
+            document.getElementById("latest-publications-row").appendChild(createPaper(papers.papers[i]))
+        }
+    </script>
 
 </body>
 

@@ -8,7 +8,8 @@ var papers = {"papers": [
     "vol": "Volume 5",
     "pages": "23",
     "doi": "https://doi.org/10.3389/fmars.2018.00023",
-    "localFileName": "10.3389_fmars.2018.00023"
+    "localFileName": "10.3389_fmars.2018.00023",
+    "oa": true
   },
   {
     "dateiso": 20170722,
@@ -19,7 +20,8 @@ var papers = {"papers": [
     "vol": "Volume 98",
     "pages": "10:2640-2652",
     "doi": "https://doi.org/10.1002/ecy.1955",
-    "localFileName": "10.1002_ecy.1955"
+    "localFileName": "10.1002_ecy.1955",
+    "oa": false
   },
   {
     "dateiso": 20170124,
@@ -30,7 +32,8 @@ var papers = {"papers": [
     "vol": "Volume 8",
     "pages": "8:932-940",
     "doi": "https://doi.org/10.1111/2041-210X.12736",
-    "localFileName": "10.1111_2041-210X.12736"
+    "localFileName": "10.1111_2041-210X.12736",
+    "oa": false
   },
   {
     "dateiso": 20150401,
@@ -41,7 +44,8 @@ var papers = {"papers": [
     "vol": "Volume 1",
     "pages": "4:20150092",
     "doi": "https://doi.org/10.1098/rsbl.2015.0092",
-    "localFileName": "10.1098_rsbl.2015.0092"
+    "localFileName": "10.1098_rsbl.2015.0092",
+    "oa": false
   },
   {
     "dateiso": 20150301,
@@ -52,7 +56,8 @@ var papers = {"papers": [
     "vol": "Volume 37",
     "pages": "2:352-362",
     "doi": "https://doi.org/10.1093/plankt/fbv010",
-    "localFileName": "10.1093_plankt_fbv010"
+    "localFileName": "10.1093_plankt_fbv010",
+    "oa": true
   },
   {
     "dateiso": 20140812,
@@ -63,7 +68,8 @@ var papers = {"papers": [
     "vol": "Volume 2",
     "pages": "e515",
     "doi": "https://doi.org/10.7717/peerj.515",
-    "localFileName": "10.7717_peerj.515"
+    "localFileName": "10.7717_peerj.515",
+    "oa": true
   },
   {
     "dateiso": 20130819,
@@ -74,7 +80,8 @@ var papers = {"papers": [
     "vol": "Volume 32",
     "pages": "4:1123-1134",
     "doi": "https://doi.org/10.1007/s00338-013-1069-2",
-    "localFileName": "10.1007_s00338-013-1069-2"
+    "localFileName": "10.1007_s00338-013-1069-2",
+    "oa": false
   }
 ]}
 
@@ -94,7 +101,7 @@ function formatAuthors(authors){
 }
 
 function formatJournal(paper){
-  var formatedName = "<em>" + "<b>" + paper.journal + "</b>" + ". " + paper.date + ", " + paper.vol + ", " + paper.pages + "</em>"
+  var formatedName = "<em>" + paper.date + ". " + "<b>" + paper.journal + "</b>" + ". " + paper.vol + ", " + paper.pages + "</em>"
   return formatedName
 }
 
@@ -133,7 +140,12 @@ function createPaper(paper){
   // Create title
   var paperTitle = document.createElement("h3")
   paperTitle.classList.add("paper-title")
-  paperTitle.innerHTML = paper.title
+  if(paper.oa){
+    var thisTitle = paper.title + " <i class='ai ai-open-access'></i>"
+  } else {
+    var thisTitle = paper.title
+  }
+  paperTitle.innerHTML = thisTitle
   // Create author list
   var authorsP = document.createElement("p")
   authorsP.innerHTML = formatAuthors(paper.authors)
@@ -147,7 +159,7 @@ function createPaper(paper){
   doiLink.setAttribute("href", paper.doi)
   doiLink.setAttribute("rel", "external")
   doiLink.setAttribute("target", "_blank")
-  doiLink.innerText = paper.doi.substr(16)
+  doiLink.innerHTML = "<i class='ai ai-doi ai-2x' style='vertical-align:middle;'></i> " + paper.doi.substr(16)
   doiP.appendChild(doiLink)
   // Apend objects first image then description then overall
   var thumbnailLink = pdfLink.cloneNode(true)

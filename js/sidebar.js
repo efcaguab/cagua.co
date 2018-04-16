@@ -2,7 +2,7 @@ var sidebarInfo = {
   "sidebar": [
     {
       "title": "Home",
-      "link": "#page-top"
+      "link": "#header-box"
     },
     {
       "title": "Publications",

@@ -1,5 +1,4 @@
-var height = $(window).height();
-document.getElementById("header-box").style.height = height + "px"
+
 
 
 // PARTICLES
@@ -65,7 +64,7 @@ var particles_config = {
     },
     "move": {
       "enable": true,
-      "speed": 2,
+      "speed": 1,
       "direction": "none",
       "random": true,
       "straight": false,
