@@ -20,10 +20,10 @@ html {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
-    color:#F8FCFC;
+    color: #F8FCFC;
 }
 
-.masthead-clear{
+.masthead-clear {
     background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url('../media/silky-shark-fin-01.png');
     background-position: center center;
     background-repeat: no-repeat;
@@ -34,7 +34,7 @@ html {
 }
 
 #fin {
-    padding-bottom: 8rem; 
+    padding-bottom: 8rem;
     position: absolute;
     background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../media/silky-shark-fin-only-01.png");
     background-repeat: no-repeat;
@@ -42,9 +42,7 @@ html {
     background-position: right bottom;
     height: 100%;
     width: 100%;
-
 }
-
 
 canvas {
     display: block;
@@ -57,7 +55,6 @@ canvas {
     position: relative;
     width: 100%;
     height: 100%;
-    
     /* background-color: #b61924;
     background-image: url("http://lorempixel.com/500/500");
     background-repeat: no-repeat;
@@ -154,7 +151,6 @@ canvas {
     transition: all 0.4s ease 0s;
 }
 
-
 .menu-toggle {
     position: fixed;
     right: 15px;
@@ -179,11 +175,11 @@ canvas {
 
 /* Papers */
 
-.description-column{
+.description-column {
     font-size: 85%;
 }
 
-.paper-title{
+.paper-title {
     font-size: 1.15rem;
 }
 
@@ -195,10 +191,11 @@ canvas {
     background-color: rgba(219, 240, 240, 0.5);
 }
 
-a{
+a {
     color: #1D6479;
 }
-.section-title h2{
+
+.section-title h2 {
     font-variant: small-caps;
     font-size: 1rem;
     font-weight: 100;
@@ -221,14 +218,14 @@ summary {
 
 summary::-webkit-details-marker {
     display: none
-  }
+}
 
 summary {
     padding-left: 20px;
     text-indent: -23px;
 }
 
-summary:before{
+summary:before {
     border-radius: 5px;
     content: "+";
     color: #1D6479;
@@ -240,10 +237,9 @@ summary:before{
     /* padding: 0; */
     /* text-align: center; */
     width: 20px;
-
 }
 
-details[open] summary:before{
+details[open] summary:before {
     content: "-";
 }
 
@@ -258,28 +254,29 @@ details[open] summary:before{
     color: white;
     background: rgba(52, 58, 64, 0.5);
     line-height: 45px;
-  }
-  
-  .scroll-to-top:focus, .scroll-to-top:hover {
-    color: white;
-  }
-  
-  .scroll-to-top:hover {
-    background: #343a40;
-  }
-  
-  .scroll-to-top i {
-    font-weight: 800;
-  }
+}
 
-  .my-flex {
+.scroll-to-top:focus,
+.scroll-to-top:hover {
+    color: white;
+}
+
+.scroll-to-top:hover {
+    background: #343a40;
+}
+
+.scroll-to-top i {
+    font-weight: 800;
+}
+
+.my-flex {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
 }
 
-.no-underline:hover{
-    text-decoration-line:none;
+.no-underline:hover {
+    text-decoration-line: none;
 }
 
 @media (min-width: 576px) {
@@ -287,6 +284,7 @@ details[open] summary:before{
         font-size: 2.5rem;
     }
 }
+
 @media (min-width: 768px) {
     #mail {
         font-size: 3.5rem;
