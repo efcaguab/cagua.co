@@ -220,26 +220,27 @@
     <script src="js/vendors/jquery-3.3.1.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
-        <script src="js/vendors/jquery-easing.min.js"></script>
-
+       
     <script src="js/vendors/particles.min.js"></script>
-    <script src="js/menu-toggle.js"></script>
     <script src="js/tooltips-with-links.js"></script>
     <script src="js/publications.js"></script>
     <script src="js/sidebar.js"></script>
     <!-- Fill the container with stars -->
     <script src="js/setup-particle-container.js"></script>
     <script>
-        // Setup height of header as soon as the div has been created
-        var height = $(window).height();
-        document.getElementById("header-box").style.height = height + "px"
+        // Setup height of header
+        // var height = $(window).height();
+        // document.getElementById("header-box").style.height = height + "px"
         // Fill navigation bar
-        document.getElementById("sidebar-wrapper").appendChild(sidebarList(sidebarInfo, "main"))
+        document.getElementById("sidebar-wrapper").appendChild(sidebarList(sidebarInfo, "no-main"))
         // Fill in papers
         for (var i = 0; i < 4; i++) {
             document.getElementById("latest-publications-row").appendChild(createPaper(papers.papers[i]))
         }
     </script>
+    <!-- Easing needs to be invoqued after navs have been created -->
+     <script src="js/vendors/jquery-easing.min.js"></script>
+     <script src="js/menu-toggle.js"></script>
 
 </body>
 
