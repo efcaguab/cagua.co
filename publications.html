@@ -11,7 +11,12 @@
   <!-- Add font awesome -->
   <!-- <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script> -->
 
-  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Load icomoon -->
+<link rel="stylesheet" href="css/icomoon.css"/>
+<!-- Load academic icons -->
+<link rel="stylesheet" href="css/academicons.min.css"/>
+
 </head>
 
 <body>
@@ -44,7 +49,7 @@
       <div class="container">
         <div class="d-flex flex-row justify-content-center pt-5">
           <div class="section-title py-3 text-center">
-            <h2>All publications<br/>(See <a href="publications.html">Google Scholar Profile</a>)</h2>
+            <h2>All publications<br/>(See <a href="https://scholar.google.com/citations?user=6t5F_-0AAAAJ" target="_blank"><i class='ai ai-google-scholar'></i> Google Scholar Profile</a>)</h2>
           </div>
         </div>
         <div class="row pb-5" id="latest-publications-row"></div>
@@ -62,11 +67,11 @@
     <script src="assets/jquery-3.3.1.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
-  <script src="assets/publications.js"></script>
-  <script src="assets/sidebar.js"></script>
-  <script src="assets/jquery-easing.min.js"></script>
-  <script src="assets/menu-toggle.js"></script>
-  <script src="assets/breadcrumb.js"></script>
+  <script src="js/publications.js"></script>
+  <script src="js/sidebar.js"></script>
+  <script src="js/vendors/jquery-easing.min.js"></script>
+  <script src="js/menu-toggle.js"></script>
+  <script src="js/breadcrumb.js"></script>
   <script>
     // Insert navigation bar
     document.getElementById("sidebar-wrapper").appendChild(sidebarList(sidebarInfo, "main"))
