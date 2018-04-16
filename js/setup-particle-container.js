@@ -126,9 +126,9 @@ if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
   particlesJS.load('particles-js', particles_config, function () {
     console.log('callback - particles.js config loaded');
   })
-  var particlesContainer = document.getElementById("header-box")
-  var onlyFin = document.createElement("div")
-  onlyFin.id = "fin"
-  var finImg = document.createElement("img")
-  particlesContainer.appendChild(onlyFin)
+  // var particlesContainer = document.getElementById("header-box")
+  // var onlyFin = document.createElement("div")
+  // onlyFin.id = "fin"
+  // var finImg = document.createElement("img")
+  // particlesContainer.appendChild(onlyFin)
 }
