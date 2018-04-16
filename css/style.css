@@ -225,6 +225,7 @@ summary {
     text-indent: -23px;
 }
 
+
 summary:before {
     border-radius: 5px;
     content: "+";
@@ -237,6 +238,14 @@ summary:before {
     /* padding: 0; */
     /* text-align: center; */
     width: 20px;
+}
+
+/* summary:hover{
+    text-decoration-line: underline;
+} */
+
+summary:hover::before{
+    text-decoration-line: underline;
 }
 
 details[open] summary:before {
