@@ -3,10 +3,10 @@ var cv = {
     {
       "id": "phd",
       "summary": "PhD in Biological Sciences",
-      "dates": "(2015-)", 
+      "dates": "(2015-)",
       "details": '<a href="http://www.stoufferlab.org/">Stouffer Lab</a> at the <a href="http://www.biol.canterbury.ac.nz/">School of Biological Sciences</a> of the <a href="http://www.canterbury.ac.nz/">University of Canterbury</a>.',
       "extra": "With support from a New Zealand International Doctoral Research Scholarship and a Canterbury Doctoral Scholarship. Travel awards generously provided by the European Space Agency and the John Glover Award from the Australian Society of Fish Biology."
-    }, 
+    },
     {
       "id": "masters",
       "dates": "(2010-2012)",
@@ -25,7 +25,7 @@ var cv = {
       "id": "bachelor",
       "dates": "(2005-2010)",
       "summary": "Bachelor in Engineering",
-      "details": '<a title="Definition of Mechatronics" href="http://en.wikipedia.org/wiki/Mechatronics" target="_blank">Mechatronics Engineering</a> at the <a href="http://www.unal.edu.co/english/" target="_blank">National University of Colombia</a> and the <a href="http://www.tum.de/en/homepage/" target="_blank">Technical University of Munich</a>.',
+      "details": '<a title="Definition of Mechatronics" href="http://en.wikipedia.org/wiki/Mechatronics" target="_blank">Mechatronics Engineering</a> at the <a href="http://www.unal.edu.co/english/">National University of Colombia</a> and the <a href="http://www.tum.de/en/homepage/" target="_blank">Technical University of Munich</a>.',
       "extra": "With support from the National University of Colombia 'Best GPA Program' and a scholarship from the German Academic Exchange Service, DAAD."
     }
   ],
@@ -77,14 +77,14 @@ var cv = {
 
 
 
-createCardHeader = function(item, targetID, headerID){
+createCardHeader = function (item, targetID, headerID) {
   var linkDiv = document.createElement("a")
   linkDiv.setAttribute("data-toggle", "collapse")
   linkDiv.setAttribute("data-target", "#" + targetID)
   linkDiv.setAttribute("aria-expanded", "true")
   linkDiv.setAttribute("aria-controls", targetID)
   linkDiv.setAttribute("href", "#!")
-  var linkTitle = document.createElement("h5")
+  var linkTitle = document.createElement("h4")
   linkTitle.classList.add("resume-element-title")
   linkTitle.innerHTML = item.summary + " " + item.dates
   linkDiv.appendChild(linkTitle)
@@ -97,25 +97,25 @@ createCardHeader = function(item, targetID, headerID){
   return cardHeaderDiv
 }
 
-createCardCollapse = function(item, targetID, headerID, parentID){
+createCardCollapse = function (item, targetID, headerID, parentID) {
   var cardBody = document.createElement("div")
   cardBody.classList.add("card-body")
   cardBody.classList.add("card-body-resume")
   cardBody.classList.add("pt-0")
   cardBody.innerHTML = item.details + " " + item.extra
-var collapseDiv = document.createElement("div")
-collapseDiv.id = targetID
-collapseDiv.classList.add("collapse")
-collapseDiv.setAttribute("aria-labelledby", headerID)
-collapseDiv.setAttribute("data-parent", "#" + parentID)
-collapseDiv.appendChild(cardBody)
-return(collapseDiv)
+  var collapseDiv = document.createElement("div")
+  collapseDiv.id = targetID
+  collapseDiv.classList.add("collapse")
+  collapseDiv.setAttribute("aria-labelledby", headerID)
+  collapseDiv.setAttribute("data-parent", "#" + parentID)
+  collapseDiv.appendChild(cardBody)
+  return (collapseDiv)
 }
 
-createCard = function(item, parent){
-  var targetID = "collapse-" + item.id 
+createCard = function (item, parent) {
+  var targetID = "collapse-" + item.id
   var headerID = "header-" + item.id
-  
+
   var cardDiv = document.createElement("div")
   cardDiv.classList.add("card")
   cardDiv.classList.add("card-resume")
@@ -124,12 +124,12 @@ createCard = function(item, parent){
   return cardDiv
 }
 
-createAcordion = function(items, acordionID){
+createAcordion = function (items, acordionID) {
   var acordeonDiv = document.createElement("div")
   var parentID = "acordion-" + acordionID
   acordeonDiv.classList.add("acordion")
   acordeonDiv.id = parentID
-  for(var i = 0; i < items.length; i++){
+  for (var i = 0; i < items.length; i++) {
     acordeonDiv.appendChild(createCard(items[i], parentID))
   }
   return acordeonDiv
