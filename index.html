@@ -237,10 +237,10 @@
         // Fill in papers
         for (var i = 0; i < 4; i++) {
             document.getElementById("latest-publications-row").appendChild(createPaper(papers.papers[i]))
-            // Fill in resume
-            document.getElementById("acordion-education-container").appendChild(createAcordion(cv.education, "education"))
-            document.getElementById("acordion-work-container").appendChild(createAcordion(cv.work, "work"))
         }
+        // Fill in resume
+        document.getElementById("acordion-education-container").appendChild(createAcordion(cv.education, "education"))
+        document.getElementById("acordion-work-container").appendChild(createAcordion(cv.work, "work"))
     </script>
     <!-- Easing needs to be invoqued after navs have been created -->
     <script src="js/vendors/jquery-easing.min.js"></script>
