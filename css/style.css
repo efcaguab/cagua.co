@@ -299,3 +299,8 @@ details[open] summary:before {
         font-size: 3.5rem;
     }
 }
+
+#title h2 {
+    color: white; 
+    text-decoration: underline;
+}
