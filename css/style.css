@@ -66,6 +66,8 @@ canvas {
     font-size: 4rem;
     margin: 0;
     padding: 0;
+    line-height: 0.9;
+    padding-bottom: 1rem;
 }
 
 @media (min-width: 400px) {
