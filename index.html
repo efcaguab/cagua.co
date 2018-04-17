@@ -43,13 +43,21 @@
                 <h1>Fernando Cagua</h1>
                 <!-- <p class="lead">Scientist, Engineer, aspiring Visual Essayist</p> -->
                 <div class="d-flex flex-row justify-content-start flex-wrap">
-                        <a class="js-scroll-trigger px-2" href="#projects"><h2>projects</h2></a> 
-                        <a class="js-scroll-trigger px-2" href="#papers"><h2>publications</h2></a>
-                        <a class="js-scroll-trigger px-2" href="#cv"><h2>resume</h2></a>
-                        <a class="js-scroll-trigger px-2" href="#contact"><h2>contact</h2></a>
+                    <a class="js-scroll-trigger px-2" href="#projects">
+                        <h2>projects</h2>
+                    </a>
+                    <a class="js-scroll-trigger px-2" href="#papers">
+                        <h2>publications</h2>
+                    </a>
+                    <a class="js-scroll-trigger px-2" href="#cv">
+                        <h2>resume</h2>
+                    </a>
+                    <a class="js-scroll-trigger px-2" href="#contact">
+                        <h2>contact</h2>
+                    </a>
                 </div>
-                
-                
+
+
                 <!-- <a role="button" class="btn btn-light js-scroll-trigger btn-lg"a> -->
             </div>
 
@@ -65,7 +73,12 @@
     <main>
 
         <!-- Projects section starts -->
-        <div class="d-flex align-items-center major-section" id="projects">
+        <div class="d-flex flex-column align-items-center major-section" id="projects">
+            <div class="container mb-auto py-3 text-center">
+                <a href="#header-box" class="js-scroll-trigger">
+                    <i class="fas fa-angle-up fa-2x"></i>
+                </a>
+            </div>
             <div class="container">
                 <div class="d-flex flex-row justify-content-center pt-5">
                     <div class="section-title py-3 text-center">
@@ -80,12 +93,23 @@
 
                 </div>
             </div>
+            <div class="container mt-auto py-3 text-center">
+                <a href="#papers" class="js-scroll-trigger">
+                    <i class="fas fa-angle-down fa-2x"></i>
+                </a>
+            </div>
+
         </div>
 
         <!-- Paper section starts -->
-        <div class="d-flex align-items-center major-section dark-blue-bg" id="papers">
+        <div class="d-flex flex-column align-items-center major-section dark-blue-bg" id="papers">
+            <div class="container mb-auto py-3 text-center">
+                <a href="#projects" class="js-scroll-trigger">
+                    <i class="fas fa-angle-up fa-2x"></i>
+                </a>
+            </div>
             <div class="container">
-                <div class="d-flex flex-row justify-content-center pt-5">
+                <div class="d-flex flex-row justify-content-center pt-1">
                     <div class="section-title py-3 text-center">
                         <h2>Latest Publications
                             <br/>
@@ -93,19 +117,29 @@
                         </h2>
                     </div>
                 </div>
-                <div class="row pb-5" id="latest-publications-row"></div>
+                <div class="row pb-1" id="latest-publications-row"></div>
+            </div>
+            <div class="container mt-auto py-3 text-center">
+                <a href="#cv" class="js-scroll-trigger">
+                    <i class="fas fa-angle-down fa-2x"></i>
+                </a>
             </div>
         </div>
         <!-- Papers section ends -->
 
         <!-- Resume section starts -->
-        <div class="d-flex major-section align-items-center" id="cv">
+        <div class="d-flex flex-column major-section align-items-center" id="cv">
+            <div class="container mb-auto py-3 text-center">
+                <a href="#papers" class="js-scroll-trigger">
+                    <i class="fas fa-angle-up fa-2x"></i>
+                </a>
+            </div>
             <div class="container">
-                <div class="d-flex flex-row justify-content-center pt-5">
+                <!-- <div class="d-flex flex-row justify-content-center pt-5">
                     <div class="section-title py-3">
                         <h2>Resume</h2>
                     </div>
-                </div>
+                </div> -->
                 <div class="row pb-5 pt-4" id="resume-row">
                     <div class="col-md-8 col-xl-9">
                         <h3 id="grants">Work</h3>
@@ -225,11 +259,21 @@
                     </div>
                 </div>
             </div>
+            <div class="container mt-auto py-3 text-center">
+                <a href="#contact" class="js-scroll-trigger">
+                    <i class="fas fa-angle-down fa-2x"></i>
+                </a>
+            </div>
         </div>
         <!-- Resume section ends -->
 
         <!-- Contact section starts -->
-        <div class="d-flex major-section dark-blue-bg align-items-center" id="contact">
+        <div class="d-flex flex-column major-section dark-blue-bg align-items-center" id="contact">
+            <div class="container mb-auto py-3 text-center">
+                <a href="#cv" class="js-scroll-trigger">
+                    <i class="fas fa-angle-up fa-2x"></i>
+                </a>
+            </div>
             <div class="container pb-5 text-center">
                 <div class="d-flex flex-row justify-content-center pt-5">
                     <div class="section-title py-3">
@@ -264,6 +308,11 @@
 
 
             </div>
+            <div class="container mt-auto py-3 text-center">
+                    <a href="#header-box" class="js-scroll-trigger">
+                        <i class="fas fa-angle-double-up fa-2x"></i>
+                    </a>
+                </div>
         </div>
         <!-- Contact section ends -->
     </main>
