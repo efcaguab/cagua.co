@@ -35,7 +35,7 @@
   // Scroll to top button appear
   $(document).scroll(function() {
     var scrollDistance = $(this).scrollTop();
-    if (scrollDistance > 100) {
+    if (scrollDistance > $(window).height()/3) {
       $('.scroll-to-top').fadeIn();
       $('#nav-button').fadeIn();
       $('#sidebar-wrapper').fadeIn();
