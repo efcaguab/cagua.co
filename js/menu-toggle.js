@@ -37,8 +37,12 @@
     var scrollDistance = $(this).scrollTop();
     if (scrollDistance > 100) {
       $('.scroll-to-top').fadeIn();
+      $('#nav-button').fadeIn();
+      $('#sidebar-wrapper').fadeIn();
     } else {
       $('.scroll-to-top').fadeOut();
+      $('#nav-button').fadeOut();
+      $('#sidebar-wrapper').fadeOut();
     }
   });
 
