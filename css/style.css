@@ -306,3 +306,7 @@ details[open] summary:before {
     color: white; 
     text-decoration: underline;
 }
+
+.major-section {
+    min-height: 100vh;
+}
