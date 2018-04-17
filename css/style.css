@@ -245,7 +245,7 @@ summary:before {
 } */
 
 summary:hover::before{
-    text-decoration-line: underline;
+    text-decoration: underline;
 }
 
 details[open] summary:before {
