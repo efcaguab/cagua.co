@@ -185,11 +185,11 @@ canvas {
     font-size: 1.15rem;
 }
 
-.light-blue-bg {
-    background-color: rgba(219, 240, 240, 0.2);
-}
+/* main .major-section:nth-child(even) {
+    background-color: rgba(219, 240, 240, 0.1);
+} */
 
-.dark-blue-bg {
+main .major-section:nth-child(even) {
     background-color: rgba(219, 240, 240, 0.5);
 }
 
@@ -254,6 +254,7 @@ details[open] summary:before {
 .card-resume{
     border: none;
     /* border-top: 1px solid rgba(0,0,0,.125); */
+    background: none;
 }
 
 .card-header-resume {
