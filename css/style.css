@@ -329,3 +329,7 @@ details[open] summary:before {
 .resume-element-title {
     font-size: 1rem;
 }
+
+button[aria-expanded="true"]{
+    background-color: aquamarine;
+}
