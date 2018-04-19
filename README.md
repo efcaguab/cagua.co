@@ -53,3 +53,5 @@ rm -f -R /usr/local/etc/nginx
 Theme inspired on https://github.com/BlackrockDigital/startbootstrap-stylish-portfolio
 Particles by https://vincentgarreau.com/particles.js/
 Icons https://icomoon.io/app/#/select/font
+<a href="http://www.onlinewebfonts.com">oNline Web Fonts</a>
+<div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
