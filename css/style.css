@@ -189,7 +189,7 @@ canvas {
     background-color: rgba(219, 240, 240, 0.1);
 } */
 
-main .major-section:nth-child(even) {
+main .major-section:nth-child(odd) {
     background-color: rgba(219, 240, 240, 0.5);
 }
 
