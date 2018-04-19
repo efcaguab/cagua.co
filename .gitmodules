@@ -1,0 +1,3 @@
+[submodule "sge-workshop"]
+	path = sge-workshop
+	url = https://github.com/efcaguab/sge-workshop.git
