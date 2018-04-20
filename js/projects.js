@@ -43,7 +43,22 @@ createCardHeaderProjects = function (item, targetID, headerID) {
   return cardHeaderDiv
 }
 
-createCardProjects = function (item, parent) {
+createCardCollapseProjects = function (item, targetID, headerID, parentID) {
+  var cardBody = document.createElement("div")
+  cardBody.classList.add("card-body")
+  cardBody.classList.add("card-body-resume")
+  cardBody.classList.add("pt-0")
+  cardBody.innerHTML = item.description
+  var collapseDiv = document.createElement("div")
+  collapseDiv.id = targetID
+  collapseDiv.classList.add("collapse")
+  collapseDiv.setAttribute("aria-labelledby", headerID)
+  collapseDiv.setAttribute("data-parent", "#" + parentID)
+  collapseDiv.appendChild(cardBody)
+  return (collapseDiv)
+}
+
+createCardProjects = function (item, parent, mobile) {
   var targetID = "collapse-proj-" + item.id
   var headerID = "header-proj-" + item.id
 
@@ -51,18 +66,24 @@ createCardProjects = function (item, parent) {
   cardDiv.classList.add("card")
   cardDiv.classList.add("card-projects")
   cardDiv.appendChild(createCardHeaderProjects(item, targetID, headerID))
-  // cardDiv.appendChild(createCardCollapse(item, targetID, headerID, parent))
+  if(mobile=="true"){
+    cardDiv.appendChild(createCardCollapseProjects(item, targetID, headerID, parent))
+  }
+
   return cardDiv
 }
 
 
-createAcordionProjects = function (items, acordionID) {
+
+createAcordionProjects = function (items, acordionID, mobile) {
   var acordeonDiv = document.createElement("div")
   var parentID = "acordion-" + acordionID
   acordeonDiv.classList.add("acordion")
   acordeonDiv.id = parentID
   for (var i = 0; i < items.length; i++) {
-    acordeonDiv.appendChild(createCardProjects(items[i], parentID))
+    acordeonDiv.appendChild(createCardProjects(items[i], parentID, mobile))
   }
   return acordeonDiv
 }
+
+document.getElementById("acordion-projects-container").appendChild(createAcordionProjects(projects,"acordion-projects", "true"))
