@@ -70,7 +70,11 @@ createCardProjects = function (item, parent, mobile) {
     cardDiv.appendChild(createCardCollapseProjects(item, targetID, headerID, parent))
   }
 
-  return cardDiv
+  var colDiv = document.createElement("div")
+  colDiv.classList.add("col")
+  colDiv.appendChild(cardDiv)
+
+  return colDiv
 }
 
 
@@ -80,9 +84,12 @@ createAcordionProjects = function (items, acordionID, mobile) {
   var parentID = "acordion-" + acordionID
   acordeonDiv.classList.add("acordion")
   acordeonDiv.id = parentID
+  var rowDiv = document.createElement("div")
+  rowDiv.classList.add("row")
   for (var i = 0; i < items.length; i++) {
-    acordeonDiv.appendChild(createCardProjects(items[i], parentID, mobile))
+    rowDiv.appendChild(createCardProjects(items[i], parentID, mobile))
   }
+  acordeonDiv.appendChild(rowDiv)
   return acordeonDiv
 }
 
