@@ -8,13 +8,13 @@ var projects = [
   {
     "id": "network",
     "name": "Network Science",
-    "description": "asdasda",
+    "description": "ecies helping each other. However we don't understand this and that. Therefore I'm investigating the factors that affect the stability of pollination  ",
     "image": "net"
   }, 
   {
     "id": "ws",
     "name": "Whale Sharks",
-    "description": "asdas",
+    "description": "Animal pollination is key for global crop producction and the maintenance of biodiversity. Pollination is supported by animal interactions of a special kind. One in which both plants and pollinators benefit from each other. of mutual benefitThe interactions that suppo",
     "image": "fin"
   }
 ]
@@ -71,26 +71,34 @@ createCardProjects = function (item, parent, mobile) {
   }
 
   var colDiv = document.createElement("div")
-  colDiv.classList.add("col")
+  colDiv.classList.add("col-sm-3")
   colDiv.appendChild(cardDiv)
 
   return colDiv
 }
 
-
-
 createAcordionProjects = function (items, acordionID, mobile) {
-  var acordeonDiv = document.createElement("div")
+  var acordionDiv = document.createElement("div")
   var parentID = "acordion-" + acordionID
-  acordeonDiv.classList.add("acordion")
-  acordeonDiv.id = parentID
+  acordionDiv.classList.add("acordion")
+  acordionDiv.id = parentID
   var rowDiv = document.createElement("div")
   rowDiv.classList.add("row")
   for (var i = 0; i < items.length; i++) {
     rowDiv.appendChild(createCardProjects(items[i], parentID, mobile))
   }
-  acordeonDiv.appendChild(rowDiv)
-  return acordeonDiv
+  acordionDiv.appendChild(rowDiv)
+  if(mobile=="false"){
+    var collapseRow = document.createElement("div")
+    collapseRow.classList.add("container")
+    for (var i = 0; i < items.length; i++) {
+      var targetID = "collapse-proj-" + items[i].id
+      var headerID = "header-proj-" + items[i].id
+      collapseRow.appendChild(createCardCollapseProjects(items[i], targetID, headerID, parentID))
+    }
+    acordionDiv.appendChild(collapseRow)
+  }
+  return acordionDiv
 }
 
-document.getElementById("acordion-projects-container").appendChild(createAcordionProjects(projects,"acordion-projects", "true"))
+// document.getElementById("acordion-projects-container").appendChild(createAcordionProjects(projects,"acordion-projects", "true"))
