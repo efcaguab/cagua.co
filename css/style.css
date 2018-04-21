@@ -394,3 +394,7 @@ a[aria-expanded="true"] {
 .project-description {
     margin: 0;
 }
+
+#mail {
+    color: var(--dark-blue)
+}
