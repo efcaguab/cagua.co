@@ -337,29 +337,17 @@ details[open] summary:before {
     font-size: 1rem;
 }
 
-.project-link {
-    display: block;
-    padding: 0.75rem;
-}
-
 .project-badge {
     width: 75%;
     /* max-width: 115px; */
     /* opacity: 0.75;
     filter: alpha(opacity=75);  */
-    fill: #1D6479;
+    fill: var(--dark-blue);
 }
 
-.project-element-title {
-    font-size: 1rem;
-    margin: 0;
-}
-
-a[aria-expanded="true"] {
-    /* border: 1px solid #1D6479; */
-    background: rgba(219, 240, 240, 0.5);
-    fill: #1D6479;
-    /* color:red; */
+.project-title {
+    font-size: 1.5rem;
+    color: var(--dark-blue);
 }
 
 .carousel-control-prev,

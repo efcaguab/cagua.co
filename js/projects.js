@@ -38,7 +38,7 @@ createSlide = function (item) {
   var col1 = $("<div></div>")
     .addClass("col-md-4 col-lg-3 text-center")
     .append($("<div>", { class: "project-badge mx-auto d-none d-md-block", html: item.image }),
-      $("<h4>", { html: item.name }))
+      $("<h4>", { html: item.name , class: "project-title"}))
 
 
   var col2 = $("<div>", { class: "col" })
