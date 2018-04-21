@@ -298,8 +298,9 @@
             particlesJS.load('particles-js', particles_config)
         }
         // Fill in projects
-        var small_device = ($(window).width() < 576) ? "true" : "false"
-        document.getElementById("acordion-projects-container").appendChild(createAcordionProjects(projects, "acordion-projects", small_device))
+        // var small_device = ($(window).width() < 576) ? "true" : "false"
+        // document.getElementById("acordion-projects-container").appendChild(createAcordionProjects(projects, "acordion-projects", small_device))
+        $("#carousel-projects-container").append(createCarousel(projects, "projectsCarousel"))
         // Fill navigation bar
         document.getElementById("sidebar-wrapper").appendChild(sidebarList(sidebarInfo, "no-main"))
         // Fill in papers

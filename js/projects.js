@@ -19,109 +19,6 @@ var projects = [
   }
 ]
 
-createCardHeaderProjects = function (item, targetID, headerID) {
-  var linkDiv = document.createElement("a")
-  linkDiv.setAttribute("data-toggle", "collapse")
-  linkDiv.setAttribute("data-target", "#" + targetID)
-  linkDiv.setAttribute("aria-expanded", "false")
-  linkDiv.setAttribute("aria-controls", targetID)
-  linkDiv.setAttribute("href", "#!")
-  linkDiv.classList.add("text-center")
-  linkDiv.classList.add("project-link")
-  var linkTitle = document.createElement("h4")
-  linkTitle.classList.add("project-element-title")
-  linkTitle.innerHTML = item.name
-  var badgeDiv = document.createElement("div")
-  badgeDiv.classList.add("project-badge")
-  // badgeDiv.setAttribute("src", "media/" + item.image + ".svg")
-  // badgeDiv.setAttribute("alt", item.image)
-  badgeDiv.classList.add("mx-auto")
-  badgeDiv.innerHTML = item.image
-  linkDiv.appendChild(badgeDiv)
-  linkDiv.appendChild(linkTitle)
-  var cardHeaderDiv = document.createElement("div")
-  cardHeaderDiv.classList.add("card-header")
-  cardHeaderDiv.classList.add("card-header-resume")
-  cardHeaderDiv.id = headerID
-  cardHeaderDiv.appendChild(linkDiv)
-  return cardHeaderDiv
-}
-
-createCardCollapseProjects = function (item, targetID, headerID, parentID, mobile) {
-  var cardBody = document.createElement("div")
-  cardBody.classList.add("card-body")
-  cardBody.classList.add("card-body-resume")
-  cardBody.classList.add("text-center")
-  cardBody.classList.add("pb-5")
-
-  // cardBody.classList.add("text-center")
-  if (mobile == "true") {
-    var text = item.description
-  } else {
-    var text = "<b>" + item.name + ":</b> " + item.description
-  }
-  cardBody.innerHTML = text
-  var collapseDiv = document.createElement("div")
-  collapseDiv.id = targetID
-  collapseDiv.classList.add("collapse")
-  collapseDiv.setAttribute("aria-labelledby", headerID)
-  collapseDiv.setAttribute("data-parent", "#" + parentID)
-  collapseDiv.appendChild(cardBody)
-  return (collapseDiv)
-}
-
-createCardProjects = function (item, parent, mobile) {
-  var targetID = "collapse-proj-" + item.id
-  var headerID = "header-proj-" + item.id
-
-  var cardDiv = document.createElement("div")
-  cardDiv.classList.add("card")
-  cardDiv.classList.add("card-resume")
-  cardDiv.appendChild(createCardHeaderProjects(item, targetID, headerID))
-  if (mobile == "true") {
-    cardDiv.appendChild(createCardCollapseProjects(item, targetID, headerID, parent + "disable", mobile))
-  }
-
-  var colDiv = document.createElement("div")
-  colDiv.classList.add("col-sm-4")
-  colDiv.classList.add("col-lg-3")
-  colDiv.appendChild(cardDiv)
-
-  return colDiv
-}
-
-createAcordionProjects = function (items, acordionID, mobile) {
-  var acordionDiv = document.createElement("div")
-  var parentID = "acordion-" + acordionID
-  acordionDiv.classList.add("acordion")
-  acordionDiv.id = parentID
-  var rowDiv = document.createElement("div")
-  rowDiv.classList.add("row")
-  rowDiv.classList.add("justify-content-center")
-  rowDiv.classList.add("no-gutters")
-  for (var i = 0; i < items.length; i++) {
-    rowDiv.appendChild(createCardProjects(items[i], parentID, mobile))
-  }
-  acordionDiv.appendChild(rowDiv)
-  if (mobile == "false") {
-    var collapseRow = document.createElement("div")
-    collapseRow.classList.add("row")
-    collapseRow.classList.add("justify-content-center")
-    var collapseCol = document.createElement("div")
-    collapseCol.classList.add("col-md-9")
-    for (var i = 0; i < items.length; i++) {
-      var targetID = "collapse-proj-" + items[i].id
-      var headerID = "header-proj-" + items[i].id
-      collapseCol.appendChild(createCardCollapseProjects(items[i], targetID, headerID, parentID, mobile))
-    }
-    collapseRow.appendChild(collapseCol)
-    acordionDiv.appendChild(collapseRow)
-  }
-  return acordionDiv
-}
-
-// document.getElementById("acordion-projects-container").appendChild(createAcordionProjects(projects,"acordion-projects", "true"))
-
 createCarouselIndicators = function (items, parent) {
   var IndicatorList = $("<ol></ol>").addClass("carousel-indicators pt-4")
   var projectsLength = items.length
@@ -140,14 +37,12 @@ createCarouselIndicators = function (items, parent) {
 createSlide = function (item) {
   var col1 = $("<div></div>")
     .addClass("col-md-4 col-lg-3 text-center")
-    .append($("<div>", {class: "project-badge mx-auto d-none d-md-block", html: item.image}),
-              $("<h4>", { html: item.name }))
+    .append($("<div>", { class: "project-badge mx-auto d-none d-md-block", html: item.image }),
+      $("<h4>", { html: item.name }))
 
 
   var col2 = $("<div>", { class: "col" })
-    .append(
-      $("<p>", { text: item.description , class: "project-description"})
-    )
+    .append($("<p>", { text: item.description, class: "project-description" }))
 
   return $("<div>", { class: "carousel-item" })
     .append($("<div></div>")
