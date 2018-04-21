@@ -10,7 +10,7 @@ var projects = [
     "name": "Network Science",
     "description": "ecies helping each other. However we don't understand this and that. Therefore I'm investigating the factors that affect the stability of pollination  ",
     "image": '<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 300 300" enable-background="new 0 0 300 300" xml:space="preserve"> <g> <path d="M279.6,259.2c-3.9,0-7.5,1.1-10.6,3l-82.6-82.6c-0.1-0.1-0.3-0.3-0.5-0.4c6.5-8,10.4-18.1,10.4-29.2 c0-11-3.9-21.2-10.3-29.1l56.3-56.3c6,4.6,13.6,7.3,21.7,7.3c19.8,0,36-16.1,36-36S283.9,0,264,0c-19.8,0-36,16.1-36,36 c0,8.2,2.7,15.7,7.3,21.7L179.1,114c-8-6.5-18.1-10.3-29.1-10.3c-11,0-21.2,3.9-29.1,10.3l-26-26c1.9-3.1,3-6.7,3-10.6 c0-11.3-9.2-20.4-20.4-20.4S57,66.2,57,77.4s9.2,20.4,20.4,20.4c3.9,0,7.5-1.1,10.6-3l26,26c-6.5,8-10.3,18.1-10.3,29.1 c0,6.3,1.3,12.2,3.5,17.7l-61.8,33.5c-4.7-5.7-11.8-9.4-19.8-9.4C11.5,191.8,0,203.3,0,217.4C0,231.5,11.5,243,25.6,243 s25.6-11.5,25.6-25.6c0-2.7-0.4-5.3-1.2-7.7l61.8-33.5c8.4,12.1,22.4,20.1,38.2,20.1c1.8,0,3.5-0.1,5.2-0.3l6.4,29 c-6.7,3.3-11.4,10.3-11.4,18.3c0,11.3,9.2,20.4,20.4,20.4c11.3,0,20.4-9.2,20.4-20.4c0-11.1-8.9-20.2-20-20.4l-6.4-29 c5.3-1.8,10.2-4.5,14.4-7.9c0.1,0.2,0.3,0.3,0.4,0.5l82.6,82.6c-1.9,3.1-3,6.7-3,10.6c0,11.3,9.2,20.4,20.4,20.4 s20.4-9.2,20.4-20.4S290.8,259.2,279.6,259.2z M25.6,233.3c-8.8,0-15.9-7.1-15.9-15.9c0-8.8,7.1-15.9,15.9-15.9s15.9,7.1,15.9,15.9 C41.5,226.1,34.3,233.3,25.6,233.3z M181.4,243.3c0,5.9-4.8,10.7-10.7,10.7c-5.9,0-10.7-4.8-10.7-10.7c0-5.9,4.8-10.7,10.7-10.7 C176.6,232.6,181.4,237.4,181.4,243.3z M264,9.7c14.5,0,26.2,11.8,26.2,26.2S278.5,62.2,264,62.2c-14.5,0-26.2-11.8-26.2-26.2 S249.6,9.7,264,9.7z M66.7,77.4c0-5.9,4.8-10.7,10.7-10.7s10.7,4.8,10.7,10.7s-4.8,10.7-10.7,10.7S66.7,83.3,66.7,77.4z M150,186.6 c-20.2,0-36.6-16.4-36.6-36.6s16.4-36.6,36.6-36.6s36.6,16.4,36.6,36.6S170.2,186.6,150,186.6z M279.6,290.3 c-5.9,0-10.7-4.8-10.7-10.7s4.8-10.7,10.7-10.7s10.7,4.8,10.7,10.7S285.5,290.3,279.6,290.3z"/> <path d="M150,124.4c-2.7,0-4.9,2.2-4.9,4.9c0,2.7,2.2,4.9,4.9,4.9c8.8,0,15.9,7.1,15.9,15.9c0,2.7,2.2,4.9,4.9,4.9 c2.7,0,4.9-2.2,4.9-4.9C175.6,135.9,164.1,124.4,150,124.4z"/> <path d="M264,30.5c3,0,5.5,2.5,5.5,5.5c0,2.7,2.2,4.9,4.9,4.9s4.9-2.2,4.9-4.9c0-8.4-6.8-15.2-15.2-15.2c-2.7,0-4.9,2.2-4.9,4.9 S261.4,30.5,264,30.5z"/> </g> </svg> '
-  }, 
+  },
   {
     "id": "ws",
     "name": "Whale Sharks",
@@ -55,7 +55,7 @@ createCardCollapseProjects = function (item, targetID, headerID, parentID, mobil
   cardBody.classList.add("pb-5")
 
   // cardBody.classList.add("text-center")
-  if(mobile=="true"){
+  if (mobile == "true") {
     var text = item.description
   } else {
     var text = "<b>" + item.name + ":</b> " + item.description
@@ -78,7 +78,7 @@ createCardProjects = function (item, parent, mobile) {
   cardDiv.classList.add("card")
   cardDiv.classList.add("card-resume")
   cardDiv.appendChild(createCardHeaderProjects(item, targetID, headerID))
-  if(mobile=="true"){
+  if (mobile == "true") {
     cardDiv.appendChild(createCardCollapseProjects(item, targetID, headerID, parent + "disable", mobile))
   }
 
@@ -103,7 +103,7 @@ createAcordionProjects = function (items, acordionID, mobile) {
     rowDiv.appendChild(createCardProjects(items[i], parentID, mobile))
   }
   acordionDiv.appendChild(rowDiv)
-  if(mobile=="false"){
+  if (mobile == "false") {
     var collapseRow = document.createElement("div")
     collapseRow.classList.add("row")
     collapseRow.classList.add("justify-content-center")
@@ -121,3 +121,68 @@ createAcordionProjects = function (items, acordionID, mobile) {
 }
 
 // document.getElementById("acordion-projects-container").appendChild(createAcordionProjects(projects,"acordion-projects", "true"))
+
+createCarouselIndicators = function (items, parent) {
+  var IndicatorList = $("<ol></ol>").addClass("carousel-indicators pt-4")
+  var projectsLength = items.length
+  for (var i = 0; i < projectsLength; i++) {
+    var listElement = $("<li></li>").attr({
+      "data-target": "#" + parent,
+      "data-slide-to": i,
+      role: "button"
+    }).addClass("carousel-indicator")
+    if (i == 0) { listElement.addClass("active") }
+    IndicatorList.append(listElement)
+  }
+  return IndicatorList
+}
+
+createSlide = function (item) {
+  var col1 = $("<div></div>")
+    .addClass("col-md-4 col-lg-3 text-center")
+    .append($("<div>", {class: "project-badge mx-auto d-none d-md-block", html: item.image}),
+              $("<h4>", { html: item.name }))
+
+
+  var col2 = $("<div>", { class: "col" })
+    .append(
+      $("<p>", { text: item.description , class: "project-description"})
+    )
+
+  return $("<div>", { class: "carousel-item" })
+    .append($("<div></div>")
+      .addClass("row align-items-center")
+      .append(col1, col2))
+
+}
+
+createCarouselInner = function (items) {
+  var CarrouselInner = $("<div>", { class: "carousel-inner" })
+  var projectsLength = items.length
+  for (var i = 0; i < projectsLength; i++) {
+    var Slide = createSlide(items[i])
+    if (i == 0) { Slide.addClass("active") }
+    CarrouselInner.append(Slide)
+  }
+  return CarrouselInner
+}
+
+createCarouselControl = function (parentCarousel, direction, leftright) {
+  return $("<a>", {
+    class: "carousel-control-" + direction,
+    href: "#" + parentCarousel,
+    role: "button",
+    "data-slide": direction
+  }).append($("<i>", { class: "fa fa-chevron-" + leftright, "aria-hidden": "true" }))
+    .append($("<span>", { class: "sr-only", text: direction }))
+}
+
+createCarousel = function (items, name) {
+  return $("<div>", { class: "carousel slide", "data-ride": "carousel", id: name })
+
+    .append($("<div>", { class: "row no-gutters" })
+      .append($("<div>", { class: "col-1" }).append(createCarouselControl(name, "prev", "left")))
+      .append($("<div>", { class: "col-10" }).append(createCarouselInner(items)))
+      .append($("<div>", { class: "col-1" }).append(createCarouselControl(name, "next", "right"))))
+    .append($("<div>", { class: "row justify-content-center pt-3" }).append(createCarouselIndicators(items, name)))
+}
