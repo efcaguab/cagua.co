@@ -221,7 +221,7 @@ summary {
 summary::-webkit-details-marker {
     display: none
 }
-/* 
+/*
 summary {
     padding-left: 20px;
     text-indent: -23px;
@@ -246,7 +246,7 @@ summary:before {
 summary:hover{
     text-decoration: underline;
 }
-/* 
+/*
 details[open] summary:before {
     content: "-";
 } */
@@ -318,7 +318,7 @@ details[open] summary:before {
 }
 
 #title h2 {
-    color: white; 
+    color: white;
     text-decoration: underline;
 }
 
@@ -330,6 +330,27 @@ details[open] summary:before {
     font-size: 1rem;
 }
 
-button[aria-expanded="true"]{
-    background-color: aquamarine;
+
+.project-link{
+    display: block;
+    padding: 0.75rem;
+}
+
+.project-badge{
+    width: 75%;
+    max-width: 115px;
+    /* opacity: 0.75;
+    filter: alpha(opacity=75);  */
+    fill: #1D6479;
+}
+
+.project-element-title {
+    font-size: 1rem;
+    margin: 0;
+}
+
+a[aria-expanded="true"]{
+    background-color: rgba(219, 240, 240, 0.5);
+    fill: #1D6479;
+    /* color:red; */
 }
