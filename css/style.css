@@ -191,13 +191,16 @@ canvas {
     background-color: rgba(219, 240, 240, 0.1);
 } */
 
-
 main .major-section:nth-child(odd) {
     background-color: var(--light-blue);
 }
 
-a, a:focus, a:hover, .btn-link{
-    color: var(--dark-blue);;
+a,
+a:focus,
+a:hover,
+.btn-link {
+    color: var(--dark-blue);
+    ;
 }
 
 .section-title h2 {
@@ -224,6 +227,7 @@ summary {
 summary::-webkit-details-marker {
     display: none
 }
+
 /*
 summary {
     padding-left: 20px;
@@ -246,15 +250,16 @@ summary:before {
     text-decoration-line: underline;
 } */
 
-summary:hover{
+summary:hover {
     text-decoration: underline;
 }
+
 /*
 details[open] summary:before {
     content: "-";
 } */
 
-.card-resume{
+.card-resume {
     border: none;
     /* border-top: 1px solid rgba(0,0,0,.125); */
     background: none;
@@ -270,7 +275,6 @@ details[open] summary:before {
     /* border-bottom: 1px solid rgba(0,0,0,.125); */
     font-size: 0.9rem;
 }
-
 
 .scroll-to-top {
     position: fixed;
@@ -333,15 +337,14 @@ details[open] summary:before {
     font-size: 1rem;
 }
 
-
-.project-link{
+.project-link {
     display: block;
     padding: 0.75rem;
 }
 
-.project-badge{
+.project-badge {
     width: 75%;
-    max-width: 115px;
+    /* max-width: 115px; */
     /* opacity: 0.75;
     filter: alpha(opacity=75);  */
     fill: #1D6479;
@@ -352,10 +355,42 @@ details[open] summary:before {
     margin: 0;
 }
 
-a[aria-expanded="true"]{
+a[aria-expanded="true"] {
     /* border: 1px solid #1D6479; */
     background: rgba(219, 240, 240, 0.5);
     fill: #1D6479;
     /* color:red; */
 }
 
+.carousel-control-prev,
+.carousel-control-next,
+.carousel-control-prev:active,
+.carousel-control-next:active,
+.carousel-control-prev:focus,
+.carousel-control-next:focus {
+    color: var(--dark-blue);
+    opacity: 1;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    color: var(--dark-blue);
+    opacity: 0.5;
+}
+
+.carousel-indicators{
+    position: relative;
+}
+
+.carousel-indicators li {
+    background-color: var(--dark-blue);
+}
+
+.carousel-indicators .active {
+    background-color: var(--dark-blue);
+    opacity: 0.5;
+}
+
+.project-description {
+    margin: 0;
+}
