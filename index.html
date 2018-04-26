@@ -29,6 +29,14 @@
     <meta name="description" content="The personal website of Edgar Fernando Cagua. Projects, papers, CV, and contact information">
     <meta name="author" content="E. Fernando Cagua">
 
+    <!-- Favicon stuff -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
 
     <!-- Add bootstrap style -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
@@ -56,7 +64,7 @@
     <!-- Navigation bar ends -->
 
     <!-- Header starts -->
-    <header class="masthead d-flex" id="header-box">
+    <header class="masthead d-flex masthead-clear" id="header-box">
         <div class="d-flex align-items-center justify-content-center my-auto" id="particles-js">
             <!-- <div ></div> -->
             <div class="container pl-4" id="title">
@@ -66,9 +74,9 @@
                     <a class="js-scroll-trigger px-2" href="#about">
                         <h2>about</h2>
                     </a>
-                    <!-- <a class="js-scroll-trigger px-2" href="#projects">
+                    <a class="js-scroll-trigger px-2" href="#projects">
                         <h2>projects</h2>
-                    </a> -->
+                    </a>
                     <a class="js-scroll-trigger px-2" href="#papers">
                         <h2>publications</h2>
                     </a>
@@ -79,15 +87,15 @@
                         <h2>contact</h2>
                     </a>
                 </div>
-
-
                 <!-- <button role="button" class="btn btn-light js-scroll-trigger btn-lg"a> -->
             </div>
-
-
         </div>
         <div class="overlay"></div>
     </header>
+
+    <script>
+
+    </script>
 
 
     <!-- Header ends -->
@@ -96,7 +104,7 @@
     <main>
 
         <!-- About section starts -->
-        <div class="d-flex flex-column align-items-center major-section" id="about">
+        <section class="d-flex flex-column align-items-center major-section" id="about">
             <div class="container mb-auto py-3 text-center">
                 <a href="#header-box" class="js-scroll-trigger" title="back to top">
                     <i class="fas fa-angle-up fa-2x"></i>
@@ -107,7 +115,7 @@
                     <div class="section-title py-3 text-center">
                         <h2>I'm a data scientist. I'm a story-teller. </h2>
                     </div>
-                    <div class="row justify-content-center pb-5" id="profile-col">
+                    <div class="row justify-content-center" id="profile-col">
                         <div class="col-lg-8 text-center">
                             <p class="lead">I use many tools (machine-learning, frequentist and bayesian stats, networks, AI, phylogenies,
                                 and geospatial methods) to uncover patterns and test hypothesis in (mostly ecological) data.
@@ -125,12 +133,42 @@
                 </a>
             </div>
 
-        </div>
+        </section>
         <!-- About section ends -->
 
 
+        <!-- Projects section starts -->
+
+        <section class="d-flex flex-column align-items-center major-section" id="projects">
+            <div class="container mb-auto py-3 text-center">
+                <a href="#about" class="js-scroll-trigger" title="back to top">
+                    <i class="fas fa-angle-up fa-2x"></i>
+                </a>
+            </div>
+
+            <div class="container">
+                <div class="section-title py-3 text-center d-none d-sm-block">
+                    <h2>Selected Projects
+                        <!-- <br/>
+                        <a href="projects.html">(See All)</a> -->
+                    </h2>
+                </div>
+
+                <div id="carousel-projects-container" class="pt-3"></div>
+
+            </div>
+
+            <div class="container mt-auto py-3 text-center">
+                <a href="#papers" class="js-scroll-trigger" title="publications">
+                    <i class="fas fa-angle-down fa-2x"></i>
+                </a>
+            </div>
+
+        </section>
+        <!-- Projects section ends -->
+
         <!-- Paper section starts -->
-        <div class="d-flex flex-column align-items-center major-section" id="papers">
+        <section class="d-flex flex-column align-items-center major-section" id="papers">
             <div class="container mb-auto py-3 text-center">
                 <a href="#about" class="js-scroll-trigger" title="projects">
                     <i class="fas fa-angle-up fa-2x"></i>
@@ -152,7 +190,7 @@
                     <i class="fas fa-angle-down fa-2x"></i>
                 </a>
             </div>
-        </div>
+        </section>
         <!-- Papers section ends -->
 
         <!-- Resume section starts -->
@@ -192,7 +230,7 @@
         <!-- Resume section ends -->
 
         <!-- Contact section starts -->
-        <div class="d-flex flex-column major-section align-items-center" id="contact">
+        <footer class="d-flex flex-column major-section align-items-center" id="contact">
             <div class="container mb-auto py-3 text-center">
                 <a href="#cv" class="js-scroll-trigger" title="resume">
                     <i class="fas fa-angle-up fa-2x"></i>
@@ -201,16 +239,11 @@
             <div class="container py-3 text-center">
                 <div class="d-flex flex-row justify-content-center">
                     <div class="section-title pb-3">
-                        <h2>Let's work together</h2>
+                        <h2>Comments, Questions, Drinks, Coffee?</h2>
                     </div>
                 </div>
                 <div class="d-flex justify-content-center pt-3 pb-4">
-                    <p class="h3 font-weight-light" id="mail">
-                        <script type='text/javascript'>a = 'fernando'; b = 'cagua.co'
-                            document.write('<A hre' + 'f="mai' + 'lto:' + a + '@' + b + '"' + 'class="no-underline"' + '>');
-                            document.write(a + '@' + b + '</a>');
-                        </script>
-                    </p>
+                    <p class="h3 font-weight-light" id="mail"></p>
                 </div>
                 <div class="d-flex flex-row justify-content-center pt-4">
                     <div class="px-3">
@@ -237,8 +270,8 @@
                     <i class="fas fa-angle-double-up fa-2x"></i>
                 </a>
             </div>
-        </div>
-        <!-- Contact section ends -->
+            </foot>
+            <!-- Contact section ends -->
 
     </main>
 
@@ -249,7 +282,7 @@
     <script src="js/vendors/jquery-3.3.1.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
-
+    <script src="js/projects.js"></script>
     <script src="js/vendors/particles.min.js"></script>
     <script src="js/tooltips-with-links.js"></script>
     <script src="js/publications.js"></script>
@@ -257,10 +290,62 @@
     <script src="js/resume.js"></script>
     <!-- Fill the container with stars -->
     <script src="js/setup-particle-container.js"></script>
-    <script>
-        // Setup height of header
-        var height = $(window).height();
-        document.getElementById("header-box").style.height = height + "px"
+
+    <script>        
+        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+            // if mobile don't load the particles but set the height of the header
+            document.getElementById("header-box").style.height = $(window).height() + "px"
+        } else {
+            document.getElementById("header-box").classList.remove("masthead-clear")
+            document.getElementById("title").style.position = "absolute"
+            particlesJS.load('particles-js', particles_config)
+        }
+        // Fill in projects
+        // var small_device = ($(window).width() < 576) ? "true" : "false"
+        // document.getElementById("acordion-projects-container").appendChild(createAcordionProjects(projects, "acordion-projects", small_device))
+        $("#carousel-projects-container").append(createCarousel(projects, "projectsCarousel"))
+        // Equalise height projects division
+        
+
+    // Normalize Carousel Heights - pass in Bootstrap Carousel items.
+$.fn.carouselHeights = function() {
+
+var items = $(this), //grab all slides
+    heights = [], //create empty array to store height values
+    tallest; //create variable to make note of the tallest slide
+
+var normalizeHeights = function() {
+
+    items.each(function() { //add heights to array
+        heights.push($(this).height()); 
+    });
+    tallest = Math.max.apply(null, heights); //cache largest value
+    items.each(function() {
+        $(this).css('min-height',tallest + 'px');
+    });
+};
+
+normalizeHeights();
+
+$(window).on('resize orientationchange', function () {
+    //reset vars
+    tallest = 0;
+    heights.length = 0;
+
+    items.each(function() {
+        $(this).css('min-height','0'); //reset min-height
+    }); 
+    normalizeHeights(); //run it again 
+});
+
+};
+
+
+$(window).on('load', function(){
+    $('#projectsCarousel .carousel-item').carouselHeights();
+});
+
+        
         // Fill navigation bar
         document.getElementById("sidebar-wrapper").appendChild(sidebarList(sidebarInfo, "no-main"))
         // Fill in papers

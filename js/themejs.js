@@ -46,5 +46,13 @@
     }
   });
 
+  // Populate email
+  var a = 'fern'
+  var b = 'ando'
+  var c = 'cagu'
+  var d = 'a.co'
+  $("#mail")
+    .text(a + b + " [-at-] " + c + d)
+
 })(jQuery); // End of use strict
 

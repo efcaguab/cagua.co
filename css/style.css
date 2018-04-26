@@ -2,6 +2,8 @@ body,
 html {
     width: 100%;
     height: 100%;
+    --dark-blue: #1D6479;
+    --light-blue: rgba(219, 240, 240, 0.5);
 }
 
 .masthead {
@@ -9,11 +11,11 @@ html {
     position: relative;
     display: table;
     width: 100%;
-    /* height: 100vh; */
-    height: auto;
+    height: 100vh;
+    /* height: auto; */
     /* padding-top: 8rem;
     padding-bottom: 8rem; */
-    background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url('../media/silky-shark-fin-01.png');
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url('../media/silky-shark-fin-01.png') var(--dark-blue);
     background-position: center center;
     background-repeat: no-repeat;
     -webkit-background-size: cover;
@@ -24,7 +26,7 @@ html {
 }
 
 .masthead-clear {
-    background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url('../media/silky-shark-fin-01.png');
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url('../media/silky-shark-fin-01.png') var(--dark-blue);
     background-position: center center;
     background-repeat: no-repeat;
     -webkit-background-size: cover;
@@ -190,11 +192,15 @@ canvas {
 } */
 
 main .major-section:nth-child(even) {
-    background-color: rgba(219, 240, 240, 0.5);
+    background-color: var(--light-blue);
 }
 
-a , .btn-link{
-    color: #1D6479;
+a,
+a:focus,
+a:hover,
+.btn-link {
+    color: var(--dark-blue);
+    ;
 }
 
 .section-title h2 {
@@ -221,7 +227,8 @@ summary {
 summary::-webkit-details-marker {
     display: none
 }
-/* 
+
+/*
 summary {
     padding-left: 20px;
     text-indent: -23px;
@@ -243,15 +250,16 @@ summary:before {
     text-decoration-line: underline;
 } */
 
-summary:hover{
+summary:hover {
     text-decoration: underline;
 }
-/* 
+
+/*
 details[open] summary:before {
     content: "-";
 } */
 
-.card-resume{
+.card-resume {
     border: none;
     /* border-top: 1px solid rgba(0,0,0,.125); */
     background: none;
@@ -267,7 +275,6 @@ details[open] summary:before {
     /* border-bottom: 1px solid rgba(0,0,0,.125); */
     font-size: 0.9rem;
 }
-
 
 .scroll-to-top {
     position: fixed;
@@ -318,7 +325,7 @@ details[open] summary:before {
 }
 
 #title h2 {
-    color: white; 
+    color: white;
     text-decoration: underline;
 }
 
@@ -328,4 +335,54 @@ details[open] summary:before {
 
 .resume-element-title {
     font-size: 1rem;
+}
+
+.project-badge {
+    width: 70%;
+    /* max-width: 115px; */
+    /* opacity: 0.75;
+    filter: alpha(opacity=75);  */
+    fill: var(--dark-blue);
+}
+
+.project-title {
+    font-size: 1.5rem;
+    color: var(--dark-blue);
+}
+
+.carousel-control-prev,
+.carousel-control-next,
+.carousel-control-prev:active,
+.carousel-control-next:active,
+.carousel-control-prev:focus,
+.carousel-control-next:focus {
+    color: var(--dark-blue);
+    opacity: 1;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    color: var(--dark-blue);
+    opacity: 0.5;
+}
+
+.carousel-indicators{
+    position: relative;
+}
+
+.carousel-indicators li {
+    background-color: var(--dark-blue);
+}
+
+.carousel-indicators .active {
+    background-color: var(--dark-blue);
+    opacity: 0.5;
+}
+
+.project-description {
+    margin: 0;
+}
+
+#mail {
+    color: var(--dark-blue)
 }

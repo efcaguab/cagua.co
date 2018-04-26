@@ -119,16 +119,4 @@ var particles_config = {
   "retina_detect": true
 }
 
-if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-  document.getElementById("header-box").classList.add("masthead-clear") 
-} else {
-  document.getElementById("title").style.position = "absolute"
-  particlesJS.load('particles-js', particles_config, function () {
-    console.log('callback - particles.js config loaded');
-  })
-  // var particlesContainer = document.getElementById("header-box")
-  // var onlyFin = document.createElement("div")
-  // onlyFin.id = "fin"
-  // var finImg = document.createElement("img")
-  // particlesContainer.appendChild(onlyFin)
-}
+
