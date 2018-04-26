@@ -1,7 +1,7 @@
 var papers = {"papers": [
   {
     "dateiso": 20180206,
-    "title": "Winers and losers in area-based management of a small scale fishery in the Colombian Pacific",
+    "title": "Winners and losers in area-based management of a small scale fishery in the Colombian Pacific",
     "authors": ["J López-Angarita", "A Tilley", "JM Díaz", "JP Hawkins", "EF Cagua", "CM Roberts"],
     "journal": "Frontiers in Marine Science",
     "date": "February 2018",

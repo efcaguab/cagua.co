@@ -41,21 +41,21 @@ var cv = {
       "id": "data-rich",
       "dates": "(2017)",
       "summary": '<span title="Society for Conservation Biology">SCB</span>, <span title="New Zealand Ecological Society">NZES</span>, and <span title="Ecological Society of Australia">ESA</span>',
-      "details": "I designed a series of seminars for environmental scientists to implement good data collection and management practices to speed up decision making in conservation. Seminars were presented at the International Congress of Conservation Bology and ECOTAZ, the Joint meeting of the Ecological Society of Australia and the New Zealand Ecological Society.",
+      "details": "I designed a series of seminars for environmental scientists to implement good data collection and management practices to speed up decision making in conservation. Seminars were presented at the International Congress of Conservation Biology and ECOTAZ, the Joint meeting of the Ecological Society of Australia and the New Zealand Ecological Society.",
       "extra": '<a href="http://cagua.co/data-rich-insight-poor/" target="_blank" title="HPC SGE workshop">Project website</a>'
     },
     {
       "id": "sif",
       "dates": "(2016)",
       "summary": "Seychelles Island Foundation",
-      "details": "I improved species monitoring practices in Aldabra, a UNESCO World Heiritage Site, by mining large datasets collected by the Seychelles Island Foundation.",
+      "details": "I improved species monitoring practices in Aldabra, a UNESCO World Heritage Site, by mining large datasets collected by the Seychelles Island Foundation.",
       "extra": ""
     },
     {
       "id": "mafia",
       "dates": "(2012-2014)",
       "summary": '<span title="King Abdullah University of Science and Technology">KAUST</span>',
-      "details": "Working for the King Abdullah University for Science and Technology, I discovered that the largest fish in the world, which was previously though to be a highly migratory species, can, in fact, be a year-round resident.",
+      "details": "Working for the King Abdullah University for Science and Technology, I discovered that the largest fish in the world, which was previously thought to be a highly migratory species, can, in fact, be a year-round resident.",
       "extra": '<a href="https://doi.org/10.1098/rsbl.2015.0092" target="_blank">Research paper</a>, <a href="https://www.altmetric.com/details/3859498/news" target="_blank">media coverage</a>.'
     },
     {
@@ -69,7 +69,7 @@ var cv = {
       "id": "wwf",
       "dates": "(2013)",
       "summary": "World Wild Fund for Nature",
-      "details": "I designed a system that uses artificial neural networks and underwater recording stations to detect ilegal dynamite fishing in Tanzania.",
+      "details": "I designed a system that uses artificial neural networks and underwater recording stations to detect illegal dynamite fishing in Tanzania.",
       "extra": '<a href="https://figshare.com/articles/Acoustic_Monitoring_of_Blast_Fishing_Pilot_Study/1003978" target="_blank">Technical Report</a>'
     }
   ]
