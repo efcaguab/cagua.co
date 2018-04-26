@@ -5,6 +5,10 @@ var sidebarInfo = {
       "link": "#header-box"
     },
     {
+      "title": "About",
+      "link": "#about"
+    },
+    {
       "title": "Publications",
       "link": "#papers"
     },
