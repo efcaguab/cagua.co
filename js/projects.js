@@ -44,7 +44,7 @@ createSlide = function (item) {
   var col2 = $("<div>", { class: "col" })
     .append($("<p>", { text: item.description, class: "project-description" }))
 
-  return $("<div>", { class: "carousel-item" })
+  return $("<div>", { class: "carousel-item align-items-center", id: "carousel-item-" + item.id})
     .append($("<div></div>")
       .addClass("row align-items-center")
       .append(col1, col2))
