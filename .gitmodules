@@ -1,3 +1,6 @@
 [submodule "sge-workshop"]
 	path = sge-workshop
 	url = https://github.com/efcaguab/sge-workshop.git
+[submodule "data-rich-insight-poor"]
+	path = data-rich-insight-poor
+	url = https://github.com/efcaguab/data-rich-insight-poor.git
