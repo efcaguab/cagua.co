@@ -9,6 +9,10 @@ var sidebarInfo = {
       "link": "#about"
     },
     {
+      "title": "Projects",
+      "link": "#projects"
+    },
+    {
       "title": "Publications",
       "link": "#papers"
     },
