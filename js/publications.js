@@ -1,5 +1,17 @@
 var papers = {"papers": [
   {
+    "dateiso": 20180612,
+    "title": "Variation in occupancy and habitat use of <i>Mobula alfredi</i> at a major aggregation site",
+    "authors": ["LIE Couturier", "P Newman", "FRA Jainie", "MB Bennett", "WN Venables", "EF Cagua", "KA Townsend", "SJ Weeks", "AJ Richardson"],
+    "journal": "Marine Ecology Progress Series",
+    "date": "July 2018",
+    "vol": "Volume 599",
+    "pages": "125-142",
+    "doi": "https://doi.org/10.3354/meps12610",
+    "localFileName": "10.3354_meps12610",
+    "oa": true
+  },
+  {
     "dateiso": 20180206,
     "title": "Winners and losers in area-based management of a small scale fishery in the Colombian Pacific",
     "authors": ["J López-Angarita", "A Tilley", "JM Díaz", "JP Hawkins", "EF Cagua", "CM Roberts"],
