@@ -31,6 +31,13 @@ var cv = {
   ],
   "work": [
     {
+      "id": "msd",
+      "dates": "(2018-19)",
+      "summary": "Ministry of Social Development", 
+      "details": "I used text mining tools to gain insight from the comments of a large internal survey. This included automatic summarization, topic analysis, and sentiment analysis. The project paved the way for future applications of Natural Language Processing in New Zealand government.",
+      "extra": ""
+    },
+    {
       "id": "abacus",
       "dates": "(2018)",
       "summary": "University of Canterbury",
