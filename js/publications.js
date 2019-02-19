@@ -1,5 +1,17 @@
 var papers = {"papers": [
   {
+    "dateiso": 20191001,
+    "title": "A review of species role concepts in food webs",
+    "authors": ["AR Cirtwill", "GV Dalla Riva", "MP Gaiarsa", "MD Bimler", "EF Cagua", "C Coux", "DM Dehling"],
+    "journal": "Food Webs",
+    "date": "September 2018", 
+    "vol": "Volume 19", 
+    "pages": "2352-2496",
+    "doi": "https://doi.org/10.1016/j.fooweb.2018.e00093",
+    "localFileName": "10.1016_j.fooweb.2018.e00093",
+    "oa": false
+  },
+  {
     "dateiso": 20180612,
     "title": "Variation in occupancy and habitat use of <i>Mobula alfredi</i> at a major aggregation site",
     "authors": ["LIE Couturier", "P Newman", "FRA Jainie", "MB Bennett", "WN Venables", "EF Cagua", "KA Townsend", "SJ Weeks", "AJ Richardson"],
