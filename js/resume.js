@@ -9,8 +9,8 @@ var cv = {
     },
     {
       "id": "masters",
-      "dates": "(2010-2012)",
-      "summary": "MSc in Marine Science &amp; Engineering",
+      "dates": "(2010-12)",
+      "summary": "MSc Marine Science &amp; Engineering",
       "details": '<a href="http://reefecology.kaust.edu.sa/Pages/Cagua.aspx">Marine Biology and Conservation</a> at the <a title="Red Sea Research Center" href="http://rsrc.kaust.edu.sa/Pages/Home.aspx">RSRC</a> at <a title="King Abdullah University of Science and Technology" href="http://www.kaust.edu.sa/">KAUST</a>.',
       "extra": "With support from a King Abdullah Discovery Fellowship and a grant from the Save our Seas Foundation."
     },
@@ -23,7 +23,7 @@ var cv = {
     },
     {
       "id": "bachelor",
-      "dates": "(2005-2010)",
+      "dates": "(2005-10)",
       "summary": "Bachelor in Engineering",
       "details": '<a title="Definition of Mechatronics" href="http://en.wikipedia.org/wiki/Mechatronics" target="_blank">Mechatronics Engineering</a> at the <a href="http://www.unal.edu.co/english/">National University of Colombia</a> and the <a href="http://www.tum.de/en/homepage/" target="_blank">Technical University of Munich</a>.',
       "extra": "With support from the National University of Colombia 'Best GPA Program' and a scholarship from the German Academic Exchange Service, DAAD."
