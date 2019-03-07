@@ -1,5 +1,17 @@
 var papers = {"papers": [
   {
+    "dateiso": 20190102,
+    "title": "Keystoneness, centrality, and the structural controllability of ecological networks",
+    "authors": ["EF Cagua", "KL Wootton", "DB Stouffer"],
+    "journal": "Journal of Ecology",
+    "date": "February 2019",
+    "vol": "Early View",
+    "pages": "1-12",
+    "doi": "https://doi.org/10.1111/1365-2745.13147",
+    "localFileName": "10.1111_1365-2745.13147",
+    "oa": false
+  },
+  {
     "dateiso": 20191001,
     "title": "A review of species role concepts in food webs",
     "authors": ["AR Cirtwill", "GV Dalla Riva", "MP Gaiarsa", "MD Bimler", "EF Cagua", "C Coux", "DM Dehling"],
