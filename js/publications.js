@@ -5,7 +5,7 @@ var papers = {"papers": [
     "authors": ["EF Cagua", "KL Wootton", "DB Stouffer"],
     "journal": "Journal of Ecology",
     "date": "February 2019",
-    "vol": "107",
+    "issue": "107",
     "pages": "1779-1790",
     "doi": "https://doi.org/10.1111/1365-2745.13147",
     "localFileName": "10.1111_1365-2745.13147",
@@ -17,7 +17,7 @@ var papers = {"papers": [
     "authors": ["AR Cirtwill", "GV Dalla Riva", "MP Gaiarsa", "MD Bimler", "EF Cagua", "C Coux", "DM Dehling"],
     "journal": "Food Webs",
     "date": "September 2018", 
-    "vol": "Volume 19", 
+    "issue": "19", 
     "pages": "2352-2496",
     "doi": "https://doi.org/10.1016/j.fooweb.2018.e00093",
     "localFileName": "10.1016_j.fooweb.2018.e00093",
@@ -29,7 +29,7 @@ var papers = {"papers": [
     "authors": ["LIE Couturier", "P Newman", "FRA Jainie", "MB Bennett", "WN Venables", "EF Cagua", "KA Townsend", "SJ Weeks", "AJ Richardson"],
     "journal": "Marine Ecology Progress Series",
     "date": "July 2018",
-    "vol": "Volume 599",
+    "issue": "599",
     "pages": "125-142",
     "doi": "https://doi.org/10.3354/meps12610",
     "localFileName": "10.3354_meps12610",
@@ -41,7 +41,7 @@ var papers = {"papers": [
     "authors": ["J López-Angarita", "A Tilley", "JM Díaz", "JP Hawkins", "EF Cagua", "CM Roberts"],
     "journal": "Frontiers in Marine Science",
     "date": "February 2018",
-    "vol": "Volume 5",
+    "issue": "5",
     "pages": "23",
     "doi": "https://doi.org/10.3389/fmars.2018.00023",
     "localFileName": "10.3389_fmars.2018.00023",
@@ -53,7 +53,7 @@ var papers = {"papers": [
     "authors": ["M Hutchinson", "EF Cagua", "DB Stouffer"],
     "journal": "Ecology",
     "date": "July 2017",
-    "vol": "Volume 98",
+    "issue": " 98",
     "pages": "10:2640-2652",
     "doi": "https://doi.org/10.1002/ecy.1955",
     "localFileName": "10.1002_ecy.1955",
@@ -65,7 +65,7 @@ var papers = {"papers": [
     "authors": ["M Hutchinson", "EF Cagua", "JA Balbuena", "DB Stouffer", "T Poisot"],
     "journal": "Methods in Ecology and Evolution",
     "date": "January 2017",
-    "vol": "Volume 8",
+    "issue": "8",
     "pages": "8:932-940",
     "doi": "https://doi.org/10.1111/2041-210X.12736",
     "localFileName": "10.1111_2041-210X.12736",
@@ -77,7 +77,7 @@ var papers = {"papers": [
     "authors": ["EF Cagua", "JEM Cochran", "CA Rohner", "CEM Prebble", "TH Sinclair-Taylor", "SJ Pierce", "ML Berumen"],
     "journal": "Biology Letters",
     "date": "April 2015",
-    "vol": "Volume 1",
+    "issue": "1",
     "pages": "4:20150092",
     "doi": "https://doi.org/10.1098/rsbl.2015.0092",
     "localFileName": "10.1098_rsbl.2015.0092",
@@ -89,7 +89,7 @@ var papers = {"papers": [
     "authors": ["CA Rohner", "AJ Armstrong", "SJ Pierce", "CEM Prebble", "EF Cagua", "JEM Cochran", "ML Berumen", "AJ Richardson"],
     "journal": "Journal of Plankton Research",
     "date": "March 2015",
-    "vol": "Volume 37",
+    "issue": "37",
     "pages": "2:352-362",
     "doi": "https://doi.org/10.1093/plankt/fbv010",
     "localFileName": "10.1093_plankt_fbv010",
@@ -101,7 +101,7 @@ var papers = {"papers": [
     "authors": ["EF Cagua", "N Collins", "J Hancock", "R Rees"],
     "journal": "PeerJ",
     "date": "August 2014",
-    "vol": "Volume 2",
+    "issue": "2",
     "pages": "e515",
     "doi": "https://doi.org/10.7717/peerj.515",
     "localFileName": "10.7717_peerj.515",
@@ -113,7 +113,7 @@ var papers = {"papers": [
     "authors": ["EF Cagua", "ML Berumen", "EHM Tyler"],
     "journal": "Coral Reefs",
     "date": "August 2013",
-    "vol": "Volume 32",
+    "issue": "32",
     "pages": "4:1123-1134",
     "doi": "https://doi.org/10.1007/s00338-013-1069-2",
     "localFileName": "10.1007_s00338-013-1069-2",
@@ -137,7 +137,7 @@ function formatAuthors(authors){
 }
 
 function formatJournal(paper){
-  var formatedName = "<em>" + paper.date + ". " + "<b>" + paper.journal + "</b>" + ". " + paper.vol + ", " + paper.pages + "</em>"
+  var formatedName = "<em>" + paper.date + ". " + "<b>" + paper.journal + "</b>" + ". " + paper.issue + ", " + paper.pages + "</em>"
   return formatedName
 }
 
