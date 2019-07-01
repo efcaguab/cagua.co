@@ -5,8 +5,8 @@ var papers = {"papers": [
     "authors": ["EF Cagua", "KL Wootton", "DB Stouffer"],
     "journal": "Journal of Ecology",
     "date": "February 2019",
-    "vol": "Early View",
-    "pages": "1-12",
+    "vol": "107",
+    "pages": "1779-1790",
     "doi": "https://doi.org/10.1111/1365-2745.13147",
     "localFileName": "10.1111_1365-2745.13147",
     "oa": false
