@@ -2,7 +2,7 @@ var cv = {
   "education": [
     {
       "id": "phd",
-      "summary": "PhD in Biological Sciences",
+      "summary": "PhD Biological Sciences",
       "dates": "(2015-)",
       "details": '<a href="http://www.stoufferlab.org/">Stouffer Lab</a> at the <a href="http://www.biol.canterbury.ac.nz/">School of Biological Sciences</a> of the <a href="http://www.canterbury.ac.nz/">University of Canterbury</a>.',
       "extra": "With support from a New Zealand International Doctoral Research Scholarship and a Canterbury Doctoral Scholarship. Travel awards generously provided by the European Space Agency and the John Glover Award from the Australian Society of Fish Biology."
