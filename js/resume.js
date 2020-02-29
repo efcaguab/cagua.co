@@ -31,6 +31,13 @@ var cv = {
   ],
   "work": [
     {
+      "id": "statsnz",
+      "dates": "(2019-)",
+      "summary": "Statistics New Zealand", 
+      "details": "The hardest task in data science is not modelling, but wrangling messy data so it's possible to gain insights from it. My job is to clean and transform all sorts of data and then obtain the insights that form the backbone to the official environmental statistics in New Zealand.",
+      "extra": ""
+    },
+    {
       "id": "msd",
       "dates": "(2018-19)",
       "summary": "Ministry of Social Development", 
