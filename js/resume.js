@@ -82,7 +82,7 @@ var cv = {
     {
       "id": "wwf",
       "dates": "(2013)",
-      "summary": "World Wild Fund for Nature",
+      "summary": "World Wide Fund for Nature",
       "details": "I designed a system that uses artificial neural networks and underwater recording stations to detect illegal dynamite fishing in Tanzania.",
       "extra": '<a href="https://figshare.com/articles/Acoustic_Monitoring_of_Blast_Fishing_Pilot_Study/1003978" target="_blank">Technical Report</a>'
     }
