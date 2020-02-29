@@ -52,7 +52,7 @@
   var c = 'cagu'
   var d = 'a.co'
   $("#mail")
-    .text(a + b + " [-at-] " + c + d)
+    .text(a + b + " 🐌 " + c + d)
 
 })(jQuery); // End of use strict
 
