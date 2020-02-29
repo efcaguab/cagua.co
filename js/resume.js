@@ -61,7 +61,7 @@ var cv = {
     {
       "id": "sif",
       "dates": "(2016)",
-      "summary": "Seychelles Island Foundation",
+      "summary": "Seychelles Islands Foundation",
       "details": "I improved species monitoring practices in Aldabra, a UNESCO World Heritage Site, by mining large datasets collected by the Seychelles Island Foundation.",
       "extra": ""
     },
