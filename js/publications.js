@@ -1,11 +1,23 @@
 var papers = {"papers": [
   {
+    "dateiso": 20200420,
+    "title": "Population genomic response to geographic gradients by widespread and endemic fishes of the Arabian Peninsula",
+    "authors": ["JD DiBattista", "P Saenz-Agudelo", "MJ Piatek", "EF Cagua", "BW Bowen", "JH Choat", "LA Rocha", "MR Gaither", "JPA Hobbs", "TH Sinclair-Taylor", "JH McIlwain", "MA Priest", "CD Braun", "NE Hussey", "ST Kessel", "ML Berumen"],
+    "journal": "Ecology and Evolution",
+    "date": "April 2020",
+    "issue": "00",
+    "pages": "1-17",
+    "doi": "https://doi.org/10.1002/ece3.6199",
+    "localFileName": "10.1002_ece3.6199",
+    "oa": true
+  },
+  {
     "dateiso": 20191009,
     "title": "Multi-method assessment of whale shark residency, distribution, and dispersal behavior at an aggregation site in the Red Sea",
     "authors": ["JEM Cochran", "CD Braun", "EF Cagua", "MF Campbell Jr.", "RS Hardenstine", "A Kattan", "MA Priest", "TH Sinclair-Taylor", "GB Skomal", "S Sultan", "L Sun", "SR Thorrold", "ML Berumen"],
     "journal": "Plos One",
     "date": "September 2019",
-    "vol": "14",
+    "issue": "14",
     "pages": "e0222285",
     "doi": "https://doi.org/10.1371/journal.pone.0222285",
     "localFileName": "10.1371_journal.pone.0222285",
