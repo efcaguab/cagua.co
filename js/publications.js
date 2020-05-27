@@ -5,8 +5,8 @@ var papers = {"papers": [
     "authors": ["JD DiBattista", "P Saenz-Agudelo", "MJ Piatek", "EF Cagua", "BW Bowen", "JH Choat", "LA Rocha", "MR Gaither", "JPA Hobbs", "TH Sinclair-Taylor", "JH McIlwain", "MA Priest", "CD Braun", "NE Hussey", "ST Kessel", "ML Berumen"],
     "journal": "Ecology and Evolution",
     "date": "April 2020",
-    "issue": "00",
-    "pages": "1-17",
+    "issue": "10",
+    "pages": "4314-4330",
     "doi": "https://doi.org/10.1002/ece3.6199",
     "localFileName": "10.1002_ece3.6199",
     "oa": true
