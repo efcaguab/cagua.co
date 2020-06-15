@@ -1,5 +1,17 @@
 var papers = {"papers": [
   {
+    "dateiso": 20200612,
+    "title": "No Place Like Home? High Residency and Predictable Seasonal Movement of Whale Sharks Off Tanzania",
+    "authors": ["CA Rohner", "JEM Cochran", "EF Cagua", "CEM Prebble", "SK Venables", "ML Berumen", "BL Kuguru", "J Rubens", "JM Brunnschweiler", "SJ Pierce"],
+    "journal": "Frontiers in Marine Science",
+    "date": "June 2020",
+    "issue": "14",
+    "pages": "e0222285",
+    "doi": "https://doi.org/10.1371/journal.pone.0222285",
+    "localFileName": "10.1371_journal.pone.0222285",
+    "oa": true
+  },
+  {
     "dateiso": 20200420,
     "title": "Population genomic response to geographic gradients by widespread and endemic fishes of the Arabian Peninsula",
     "authors": ["JD DiBattista", "P Saenz-Agudelo", "MJ Piatek", "EF Cagua", "BW Bowen", "JH Choat", "LA Rocha", "MR Gaither", "JPA Hobbs", "TH Sinclair-Taylor", "JH McIlwain", "MA Priest", "CD Braun", "NE Hussey", "ST Kessel", "ML Berumen"],
