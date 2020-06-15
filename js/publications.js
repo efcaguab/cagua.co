@@ -6,9 +6,9 @@ var papers = {"papers": [
     "journal": "Frontiers in Marine Science",
     "date": "June 2020",
     "issue": "14",
-    "pages": "e0222285",
-    "doi": "https://doi.org/10.1371/journal.pone.0222285",
-    "localFileName": "10.1371_journal.pone.0222285",
+    "pages": "423",
+    "doi": "https://doi.org/10.3389/fmars.2020.00423",
+    "localFileName": "10.3389_fmars.2020.00423",
     "oa": true
   },
   {
