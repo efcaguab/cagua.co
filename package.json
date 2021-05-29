@@ -1,0 +1,29 @@
+{
+  "name": "cagua.co",
+  "version": "1.0.0",
+  "description": "Fernando Cagua personal website",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/efcaguab/cagua.co.git"
+  },
+  "keywords": [
+    "portfolio",
+    "blog",
+    "data",
+    "science"
+  ],
+  "author": "Fernando Cagua",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/efcaguab/cagua.co/issues"
+  },
+  "homepage": "https://github.com/efcaguab/cagua.co#readme",
+  "dependencies": {
+    "@popperjs/core": "^2.9.2",
+    "bootstrap": "^5.0.1"
+  }
+}
