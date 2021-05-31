@@ -24,6 +24,8 @@
   "homepage": "https://github.com/efcaguab/cagua.co#readme",
   "dependencies": {
     "@popperjs/core": "^2.9.2",
-    "bootstrap": "^5.0.1"
+    "bootstrap": "^5.0.1",
+    "particles.js": "github:VincentGarreau/particles.js",
+    "typed.js": "^2.0.12"
   }
 }

@@ -1,0 +1,17 @@
+<div class="col-lg-6 px-lg-4 py-4">
+    <strong><a class="link-dark" href="/publications/{{ .localFileName }}.pdf">{{ .title | safeHTML}}</a></strong>
+    <ul class="list-inline small my-3">
+        {{ range .authors }}
+            {{ if in . "EF Cagua"}}
+            <li class="list-inline-item"><strong>{{ . }}</strong></li>
+            {{ else }}
+                <li class="list-inline-item">{{ . }}</li>
+            {{ end }}
+        {{ end }}
+    </ul>
+    <p class="small text-break text-muted">
+        {{ $doiString := replace .doi "https://doi.org/" "" }}
+        <em>{{ .date }}. <strong>{{  .journal }}</strong>. {{ .issue }}, {{ .pages }}. doi: <a class="text-reset" href="{{ .doi }}">{{ $doiString }}</a></em>
+    </p>
+        
+</div>

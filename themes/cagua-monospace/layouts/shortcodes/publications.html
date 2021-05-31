@@ -1,0 +1,5 @@
+<div class="row my-2">
+    {{ range sort $.Site.Data.publications.papers "dateiso" "desc"}}
+    {{ partial "publication.html" . }}
+    {{ end }}
+</div>

@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+$font-family-base: 'Space Mono',
+monospace;
+@import "node_modules/bootstrap/scss/bootstrap";
+@import "styles";
+
+.masthead {    
+        .nav-link {
+            padding-left: 0;
+            padding-right: $spacer * 2;
+        }
+        min-height: 100vh!important;
+}
+
+.typed-strings {
+    p {
+        margin-bottom: 0;
+    }
+}

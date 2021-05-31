@@ -1,0 +1,59 @@
+<div class="d-flex w-100 bg-dark text-light masthead">
+    <div class="container d-flex flex-column">
+        <div class="mb-auto">
+        </div>
+        <div class="row my-5">
+            <div class="col col-lg-8">
+                <h1 class="display-1">{{ .Site.Params.mastheadTitle }}</h1>
+                <div class="lead my-5">
+                    <div class="typed-strings">
+                        {{ range .Site.Params.mastheadTyped }}
+                            <p>{{ . | markdownify }}</p>
+                        {{ end }}
+                      </div>
+                      <span class="iama"></span>
+                </div>
+                <div class="fs-4 my-5">
+                    <ul class="nav justify-content-start">
+                        {{ range .Site.Menus.main }}
+                        <li class="nav-item">
+                            {{ $text := print .Name | safeHTML }}
+                            <a class="link-light" href="{{ .URL }}">{{ $text }}</a>
+                        </li>
+                        {{ end }}
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <footer class="mt-auto mb-5">
+            <p>
+                Get in touch: <a class="link-light" href="{{ .Site.Params.mail.link }}">{{ .Site.Params.mail.name }}</a>
+            </p>
+            <p>
+                {{ range .Site.Params.social }}
+                <li class="list-inline-item">
+                    <a href="{{ .link }}" class="link-light">
+                        <span>{{ .icon | safeHTML}}</span>
+                    </a>
+                </li>
+                {{ end }}
+            </p>
+        </footer>
+    </div>
+</div>
+
+{{ $typed := resources.Get "js/typed.min.js" }}
+{{ $jsMasthead := slice $typed | resources.Concat "js/masthead.js" | resources.Minify }}
+<!-- JavaScript and dependencies -->
+<script src="{{$jsMasthead.RelPermalink}}" defer></script>
+<script>
+    window.onload = function () {
+        var typed = new Typed('.iama', {
+            stringsElement: '.typed-strings',
+            typeSpeed: 30,
+            backSpeed: 20,
+            backDekay: 1000,
+            smartBackspace: true
+        });
+    };
+</script>

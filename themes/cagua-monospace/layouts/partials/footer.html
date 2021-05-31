@@ -1,0 +1,31 @@
+{{ if not .IsHome }}
+<footer class="py-3 mt-auto bg-dark text-light">
+    
+    <div class="container text-center">
+        <ul class="list-inline">
+            {{ range .Site.Params.social }}
+            <li class="list-inline-item">
+                <a href="{{ .link }}" class="link-light">
+                    <span>{{ .icon | safeHTML}}</span>
+                    <span>{{ .name }}</span>
+                </a>
+            </li>
+            {{ end }}
+            <li class="list-inline-item">
+                <a href="{{ .Site.Params.mail.link }}" class="link-light">
+                    <span>{{ .Site.Params.mail.icon | safeHTML}}</span>
+                    <span>{{ .Site.Params.mail.name }}</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    
+</footer>
+{{ end }}
+
+<!-- JavaScript and dependencies -->
+
+{{ $bootstrap := resources.Get "js/bootstrap.bundle.min.js" }}
+{{ $js := slice $bootstrap | resources.Concat "js/bundle.js" | resources.Minify }}
+<!-- JavaScript and dependencies -->
+<script src="{{$js.RelPermalink}}" defer></script>
