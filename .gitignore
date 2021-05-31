@@ -11,3 +11,4 @@ apps/demografia-del-voto/data/demographics_df\.rds
 logs/
 
 node_modules
+public/
