@@ -1,0 +1,16 @@
+{{ define "main" }}
+
+<div class="container my-5">
+    <h1 class="my-5 display-2">{{ .Title }}</h1>
+    <div class="row">
+        {{ with $.Site.Params.projects.list_intro }}<p>{{ . }}</p>{{ end }}
+        {{ range .Pages.ByPublishDate.Reverse }}
+        <div class="col-lg-6 px-lg-4 py-4">
+            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+            <p class="small">{{ .Summary }}</p>
+        </div>
+        {{ end }}
+    </div>
+</div>
+
+{{ end }}

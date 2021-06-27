@@ -1,0 +1,77 @@
+{{ define "main" }}
+
+<div class="container my-5">
+    <h1 class="my-5 display-2">{{ .Title }}</h1>
+    <div class="row py-3">
+        {{/*  {{ with .Params.context }}
+        <div class="col-lg-4 py-3 project-context">
+            {{ with $.Site.Params.projects.context_title }}<h2>{{ . }}</h2>{{ end }}
+            {{ . | markdownify }}
+        </div>
+        {{ end }}  */}}
+        {{ with .Params.problem}}
+        <div class="col-lg-4 py-3 project-problem">
+            {{ with $.Site.Params.projects.problem_title }}<h2>{{ . }}</h2>{{ end }}
+            {{ . | markdownify }}
+        </div>
+        {{ end }}
+        {{ with .Params.solution}}
+        <div class="col-lg-4 py-3 project-solution">
+            {{ with $.Site.Params.projects.solution_title }}<h2>{{ . }}</h2>{{ end }}
+            {{ . | markdownify }}
+        </div>
+        {{ end }}
+        {{ with .Params.result}}
+        <div class="col-lg-4 py-3 project-solution">
+            {{ with $.Site.Params.projects.result_title }}<h2>{{ . }}</h2>{{ end }}
+            {{ . | markdownify }}
+        </div>
+        {{ end }}
+    </div>
+    {{/*  <div class="row py-3">
+        {{ .Content }}
+    </div>  */}}
+    <div class="project-links my-3">
+        <ul class="list-inline">
+            {{ with .Params.client }}
+            <li class="list-inline-item py-2 pr-2">
+                <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <polyline points="5 12 3 12 12 3 21 12 19 12" />
+                        <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+                        <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+                      </svg>
+                <span>{{ . }}</span>
+            </li>
+            {{end}}
+            {{ with .Params.location }}
+            <li class="list-inline-item py-2 pr-2">
+                <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <circle cx="12" cy="11" r="3" />
+                        <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
+                      </svg>
+                </span>
+                <span>{{ . }}</span>
+            </li>
+            {{end}}
+            {{ with .Params.code }}
+            <li class="list-inline-item py-2 pr-2">
+                <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-code" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <polyline points="7 8 3 12 7 16" />
+                        <polyline points="17 8 21 12 17 16" />
+                        <line x1="14" y1="4" x2="10" y2="20" />
+                      </svg>
+                </span>
+                <span>{{ . }}</span>
+            </li>
+            {{end}}
+        </ul>
+    </div>
+</div>
+
+{{ end }}
