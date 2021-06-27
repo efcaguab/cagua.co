@@ -50,3 +50,9 @@ params:
     name: fernando@cagua.co
     # icon: '<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><rect x="3" y="5" width="18" height="14" rx="2"></rect><polyline points="3 7 12 13 21 7"></polyline></svg>'
     link: 'mailto:fernando@cagua.co'
+  projects:
+    context_title: The context
+    problem_title: The challengue
+    solution_title: The solution
+    result_title: The result
+    list_intro: This is a (work in progress) selection of some of the projects I've enjoyed the most. Feel free to get in touch for more information. 
