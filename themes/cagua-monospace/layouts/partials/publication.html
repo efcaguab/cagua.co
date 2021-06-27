@@ -12,6 +12,5 @@
     <p class="small text-break text-muted">
         {{ $doiString := replace .doi "https://doi.org/" "" }}
         {{ .date }}. <em>{{  .journal }}</em>. {{ .issue }}, {{ .pages }}. doi: <a class="text-reset" href="{{ .doi }}">{{ $doiString }}</a>
-    </p>
-        
+    </p>     
 </div>

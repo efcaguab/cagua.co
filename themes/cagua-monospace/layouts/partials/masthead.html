@@ -15,7 +15,7 @@
                       <span class="iama">{{ $lastTyped }}</span>
                 </div>
                 <div class="fs-4 my-5">
-                    <ul class="nav justify-content-start">
+                    <ul class="nav index-nav">
                         {{ range .Site.Menus.main }}
                         <li class="nav-item">
                             {{ $text := print .Name | safeHTML }}
