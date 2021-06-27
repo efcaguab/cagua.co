@@ -7,9 +7,9 @@ menu:
     # - name: "about"
     #   url: "/"
     #   weight: 1
-    # - name: "projects"
-    #   url: "/"
-    #   weight: 2
+    - name: "projects"
+      url: "/projects"
+      weight: 2
     # - name: "blog"
     #   url: "/"
     #   weight: 2.5
