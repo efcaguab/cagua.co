@@ -4,6 +4,10 @@ monospace;
 @import "node_modules/bootstrap/scss/bootstrap";
 @import "styles";
 
+a {
+    @extend .link-light
+}
+
 .masthead {    
         .nav-link {
             padding-left: 0;
