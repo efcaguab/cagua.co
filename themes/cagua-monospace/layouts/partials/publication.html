@@ -1,5 +1,5 @@
 <div class="col-lg-6 px-lg-4 py-4">
-    <a class="text-reset" href="/publications/{{ .localFileName }}.pdf">{{ .title | safeHTML}}</a>
+    <a class="text-reset" href="/publications/{{ .localFileName }}.pdf"><h4>{{ .title | safeHTML}}</h4></a>
     <ul class="list-inline text-muted small my-3">
         {{ range .authors }}
             {{ if in . "EF Cagua"}}
