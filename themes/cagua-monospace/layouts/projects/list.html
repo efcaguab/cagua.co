@@ -6,8 +6,32 @@
         {{ with $.Site.Params.projects.list_intro }}<p>{{ . | markdownify }}</p>{{ end }}
         {{ range .Pages.ByPublishDate.Reverse }}
         <div class="col-lg-6 px-lg-4 py-4">
-            <a href="{{ .RelPermalink }}"><h4>{{ .Title }}</h4></a>
-            <p class="small">{{ .Summary }}</p>
+            <a href="{{ .RelPermalink }}" class="list-heading"><h3>{{ .Title }}
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+                    <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+                  </svg>
+            </h3></a>
+            <p class="mb-2">{{ .Summary }}</p>
+            <p class="small"><a class="text-muted" href="{{ .RelPermalink }}">Read more...</a></p>
+            <p class="small">
+                <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-tool" width="16" height="16" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M7 10h3v-3l-3.5 -3.5a6 6 0 0 1 8 8l6 6a2 2 0 0 1 -3 3l-6 -6a6 6 0 0 1 -8 -8l3.5 3.5" />
+                      </svg>
+                </span>
+                
+                <span>
+                Skills: 
+                {{ range (.GetTerms "skills") }}
+                <span><a href="{{ .Permalink }}">{{ .LinkTitle }}</a></span>
+                {{ end }}
+                </span>
+            </p>
+
+            
         </div>
         {{ end }}
     </div>
