@@ -53,7 +53,7 @@ params:
     link: 'mailto:fernando@cagua.co'
   projects:
     context_title: The context
-    problem_title: The challengue
+    problem_title: The challenge
     solution_title: The solution
     result_title: The result
     list_intro: This list is a work in progress, for a more complete view of my work, visit my [GitHub profile](https://github.com/efcaguab). Feel free to get in touch for more information. 
