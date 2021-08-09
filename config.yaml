@@ -2,6 +2,8 @@ baseURL: http://cagua.co/
 languageCode: en-au
 title: Fernando Cagua
 theme: cagua-monospace
+taxonomies: 
+  tag: skills
 menu:
   main:
     # - name: "about"
