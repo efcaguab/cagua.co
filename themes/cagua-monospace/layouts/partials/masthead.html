@@ -1,4 +1,4 @@
-<div class="d-flex w-100 bg-dark text-light masthead">
+<div class="d-flex w-100 masthead">
     <div class="container d-flex flex-column">
         <div class="mb-auto">
         </div>
@@ -19,7 +19,7 @@
                         {{ range .Site.Menus.main }}
                         <li class="nav-item">
                             {{ $text := print .Name | safeHTML }}
-                            <a class="link-light" href="{{ .URL }}">{{ $text }}</a>
+                            <a class="" href="{{ .URL }}">{{ $text }}</a>
                         </li>
                         {{ end }}
                     </ul>
@@ -28,12 +28,12 @@
         </div>
         <footer class="mt-auto mb-5">
             <p>
-                Get in touch: <a class="link-light" href="{{ .Site.Params.mail.link }}">{{ .Site.Params.mail.name }}</a>
+                Get in touch: <a class="" href="{{ .Site.Params.mail.link }}">{{ .Site.Params.mail.name }}</a>
             </p>
             <p>
                 {{ range .Site.Params.social }}
                 <li class="list-inline-item">
-                    <a href="{{ .link }}" class="link-light">
+                    <a href="{{ .link }}" class="">
                         <span>{{ .icon | safeHTML}}</span>
                     </a>
                 </li>

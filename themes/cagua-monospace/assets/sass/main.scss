@@ -1,11 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
-$font-family-base: 'Space Mono',
-monospace;
+$font-family-base: 'Space Mono',monospace;
+
+// scss-docs-start gray-color-variables
+$white:    #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #6c757d !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black:    #000 !default;
+
+
+$dark: $black;
+
+$light: $gray-200;
+
+$primary: $gray-900;
+$body-bg: $gray-100;
+$body-color: $gray-800;
+
 @import "node_modules/bootstrap/scss/bootstrap";
 @import "styles";
 
-a {
-    @extend .link-light
+h1, h2, h3, h4, h5 {
+    color: $primary;
 }
 
 .masthead {    
