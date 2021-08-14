@@ -1,5 +1,5 @@
 ---
-title: "Fighting illegal dynamite fishing with AI"
+title: "Fighting dynamite fishing with AI"
 date: 2014-03-20T14:24:29+12:00
 draft: false
 problem: Blast (or dynamite) fishing is an illegal technique used to kill hundreds of fish in seconds. It can give some fishers a quick gain, but blast fishing is dangerous, wasteful, and destroys the coral reefs that sustain marine life and the livelihoods of thousands of people. WWF was aware of the problem but without any data about its frequency or distribution it was unable to quantify the impact on the ecosystem and therefore it was hard to convince authorities to initiate a campaign against this practice. 
