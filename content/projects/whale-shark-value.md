@@ -14,6 +14,7 @@ skills:
   - Generalised Linear Models
   - Machine learning
   - Report writing
+  - Data analysis
   - Data visualisation
   - Data wrangling
 images:

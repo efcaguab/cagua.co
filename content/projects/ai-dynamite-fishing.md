@@ -14,6 +14,7 @@ skills:
   - Artificial Intelligence
   - R
   - Data visualisation
+  - Data science
   - Report writing
 images:
   - path: images/projects/whale-shark-south-ari.jpeg
