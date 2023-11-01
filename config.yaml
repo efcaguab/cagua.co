@@ -4,8 +4,8 @@ title: Fernando Cagua
 theme: cagua-monospace
 taxonomies: 
   tag: skills
-menu:
-  main:
+# menu:
+  # main:
     # - name: "about"
     #   url: "/"
     #   weight: 1
@@ -15,7 +15,7 @@ menu:
     # - name: "blog"
     #   url: "/"
     #   weight: 2.5
-    #- name: "publications"
+    # - name: "publications"
     #  url: "/publications"
     #  weight: 3
     # - name: "contact"
@@ -25,8 +25,8 @@ module:
   mounts:
     - source: "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
       target: "assets/js/bootstrap.bundle.min.js"
-    - source: "node_modules/particles.js/particles.min.js"
-      target: "assets/js/particles.min.js"
+    #- source: "node_modules/particles.js/particles.min.js"
+    #  target: "assets/js/particles.min.js"
     - source: "node_modules/typed.js/lib/typed.min.js"
       target: "assets/js/typed.min.js"
 
@@ -36,8 +36,7 @@ params:
     - I'm a data professional
     - I'm a data scientist
     - I'm a data engineer
-    - I'm a data analyst
-    - I'm a data story teller
+    - I'm a ML engineer
     - I'm a data professional
   mastheadLead: I’m a data professional
   social:
